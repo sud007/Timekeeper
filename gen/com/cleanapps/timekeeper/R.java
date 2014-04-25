@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package com.example.timekeeper;
+package com.cleanapps.timekeeper;
 
 public final class R {
     public static final class attr {

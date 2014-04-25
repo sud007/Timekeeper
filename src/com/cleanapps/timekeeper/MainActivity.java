@@ -29,7 +29,7 @@ import com.cleanapps.model.MainListData;
 import com.cleanapps.timekeeper.dbhelper.LoginDBHelper;
 import com.cleanapps.util.TimeKeeperConstants;
 import com.cleanapps.util.TimeKeeperUtilMethods;
-import com.example.timekeeper.R;
+import com.cleanapps.timekeeper.R;
 
 public class MainActivity extends Activity implements OnClickListener {
 	private final String tag = MainActivity.class.getSimpleName();
