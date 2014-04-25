@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_light"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/fragment_data_input_login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/login_button_selector"
+        android:layout_marginTop="16dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:text="@string/fragment_data_input_login_button" />
+
+    <EditText
+        android:id="@+id/fragment_data_input_client_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="@string/fragment_data_input_client_hint"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/fragment_data_input_work_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="@string/fragment_data_input_work_done_hint"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/fragment_data_input_remarks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="@string/fragment_data_input_remarks_hint"
+        android:padding="10dp" />
+
+    <LinearLayout
+        android:id="@+id/fragment_data_bottom_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/fragment_data_input_save_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_weight="1"
+            android:padding="4dp"
+            android:text="@string/fragment_data_input_save_button" />
+
+        <Button
+            android:id="@+id/fragment_data_input_logout_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_weight="1"
+            android:padding="4dp"
+            android:background="@drawable/logout_button_selector"
+            android:text="@string/fragment_data_input_logout_button" />
+    </LinearLayout>
+
+</LinearLayout>
