@@ -8,13 +8,55 @@
 package com.cleanapps.timekeeper;
 
 public final class R {
+    public static final class anim {
+        public static final int blink=0x7f040000;
+        public static final int bounce=0x7f040001;
+        public static final int fade_in=0x7f040002;
+        public static final int fade_out=0x7f040003;
+        public static final int flip=0x7f040004;
+        public static final int move_down=0x7f040005;
+        public static final int move_up=0x7f040006;
+        public static final int rotate=0x7f040007;
+        public static final int sequential=0x7f040008;
+        public static final int slide_down=0x7f040009;
+        public static final int slide_up=0x7f04000a;
+        public static final int together=0x7f04000b;
+        public static final int zoom_in=0x7f04000c;
+        public static final int zoom_out=0x7f04000d;
+    }
     public static final class attr {
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int forwardTiltOffset=0x7f010002;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int intensity=0x7f010000;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int tiltSensitivity=0x7f010001;
     }
     public static final class color {
-        public static final int green_login=0x7f040000;
-        public static final int grey_dark=0x7f040002;
-        public static final int grey_light=0x7f040003;
-        public static final int red_logout=0x7f040001;
+        public static final int green_login=0x7f050000;
+        public static final int grey_dark=0x7f050002;
+        public static final int grey_light=0x7f050003;
+        public static final int opaque_white=0x7f050004;
+        public static final int red_logout=0x7f050001;
+        public static final int transparent_white=0x7f050005;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
@@ -24,43 +66,70 @@ public final class R {
          would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively).
     
          */
-        public static final int activity_horizontal_margin=0x7f050000;
-        public static final int activity_vertical_margin=0x7f050001;
+        public static final int activity_horizontal_margin=0x7f060000;
+        public static final int activity_horizontal_margin_reduced=0x7f060003;
+        public static final int activity_large_text=0x7f060005;
+        public static final int activity_title_text=0x7f060004;
+        public static final int activity_vertical_margin=0x7f060001;
+        public static final int activity_vertical_margin_reduced=0x7f060002;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
-        public static final int login_button_selector=0x7f020001;
-        public static final int logout_button_selector=0x7f020002;
+        public static final int btn_signin_disabled=0x7f020000;
+        public static final int btn_signin_focus=0x7f020001;
+        public static final int btn_signin_normal=0x7f020002;
+        public static final int btn_signin_pressed=0x7f020003;
+        public static final int ic_launcher=0x7f020004;
+        public static final int login_button_selector=0x7f020005;
+        public static final int logout_button_selector=0x7f020006;
+        public static final int menu_left_devider=0x7f020007;
+        public static final int signin_button_selector=0x7f020008;
+        public static final int splash_bg=0x7f020009;
     }
     public static final class id {
-        public static final int action_settings=0x7f090008;
-        public static final int container=0x7f090000;
-        public static final int fragment_data_bottom_container=0x7f090005;
-        public static final int fragment_data_input_client_info=0x7f090002;
-        public static final int fragment_data_input_login_button=0x7f090001;
-        public static final int fragment_data_input_logout_button=0x7f090007;
-        public static final int fragment_data_input_remarks=0x7f090004;
-        public static final int fragment_data_input_save_button=0x7f090006;
-        public static final int fragment_data_input_work_done=0x7f090003;
+        public static final int action_settings=0x7f0a000b;
+        public static final int activity_registration_hi_text=0x7f0a0002;
+        public static final int activity_splashanim_title_text=0x7f0a0003;
+        public static final int background=0x7f0a0001;
+        public static final int container=0x7f0a0000;
+        public static final int fragment_data_bottom_container=0x7f0a0008;
+        public static final int fragment_data_input_client_info=0x7f0a0005;
+        public static final int fragment_data_input_login_button=0x7f0a0004;
+        public static final int fragment_data_input_logout_button=0x7f0a000a;
+        public static final int fragment_data_input_remarks=0x7f0a0007;
+        public static final int fragment_data_input_save_button=0x7f0a0009;
+        public static final int fragment_data_input_work_done=0x7f0a0006;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int data_input=0x7f030001;
-        public static final int fragment_main=0x7f030002;
+        public static final int activity_registration=0x7f030001;
+        public static final int activity_sequential_animation=0x7f030002;
+        public static final int activity_splash=0x7f030003;
+        public static final int data_input=0x7f030004;
+        public static final int fragment_main=0x7f030005;
     }
     public static final class menu {
-        public static final int main=0x7f080000;
+        public static final int main=0x7f090000;
     }
     public static final class string {
-        public static final int action_settings=0x7f060002;
-        public static final int app_name=0x7f060000;
-        public static final int fragment_data_input_client_hint=0x7f060004;
-        public static final int fragment_data_input_login_button=0x7f060003;
-        public static final int fragment_data_input_logout_button=0x7f060008;
-        public static final int fragment_data_input_remarks_hint=0x7f060006;
-        public static final int fragment_data_input_save_button=0x7f060007;
-        public static final int fragment_data_input_work_done_hint=0x7f060005;
-        public static final int hello_world=0x7f060001;
+        public static final int action_settings=0x7f070002;
+        public static final int activity_registration_google_plus=0x7f070006;
+        /**  Registration Activity 
+         */
+        public static final int activity_registration_hi=0x7f070004;
+        public static final int activity_registration_welcome_text=0x7f070005;
+        /**  Splash animation activity 
+         */
+        public static final int activity_splashanim_timeKeeper=0x7f070003;
+        public static final int app_name=0x7f070000;
+        public static final int fragment_data_input_client_hint=0x7f070008;
+        /**  Main Activity 
+         */
+        public static final int fragment_data_input_login_button=0x7f070007;
+        public static final int fragment_data_input_logout_button=0x7f07000c;
+        public static final int fragment_data_input_remarks_hint=0x7f07000a;
+        public static final int fragment_data_input_save_button=0x7f07000b;
+        public static final int fragment_data_input_work_done_hint=0x7f070009;
+        public static final int hello_world=0x7f070001;
     }
     public static final class style {
         /** 
@@ -84,10 +153,71 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f070000;
+        public static final int AppBaseTheme=0x7f080000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f070001;
+        public static final int AppTheme=0x7f080001;
     }
+    public static final class styleable {
+        /** Attributes that can be used with a ParallaxImageView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #ParallaxImageView_forwardTiltOffset com.cleanapps.timekeeper:forwardTiltOffset}</code></td><td></td></tr>
+           <tr><td><code>{@link #ParallaxImageView_intensity com.cleanapps.timekeeper:intensity}</code></td><td></td></tr>
+           <tr><td><code>{@link #ParallaxImageView_tiltSensitivity com.cleanapps.timekeeper:tiltSensitivity}</code></td><td></td></tr>
+           </table>
+           @see #ParallaxImageView_forwardTiltOffset
+           @see #ParallaxImageView_intensity
+           @see #ParallaxImageView_tiltSensitivity
+         */
+        public static final int[] ParallaxImageView = {
+            0x7f010000, 0x7f010001, 0x7f010002
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.cleanapps.timekeeper.R.attr#forwardTiltOffset}
+          attribute's value can be found in the {@link #ParallaxImageView} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.cleanapps.timekeeper:forwardTiltOffset
+        */
+        public static final int ParallaxImageView_forwardTiltOffset = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.cleanapps.timekeeper.R.attr#intensity}
+          attribute's value can be found in the {@link #ParallaxImageView} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.cleanapps.timekeeper:intensity
+        */
+        public static final int ParallaxImageView_intensity = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.cleanapps.timekeeper.R.attr#tiltSensitivity}
+          attribute's value can be found in the {@link #ParallaxImageView} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.cleanapps.timekeeper:tiltSensitivity
+        */
+        public static final int ParallaxImageView_tiltSensitivity = 1;
+    };
 }
