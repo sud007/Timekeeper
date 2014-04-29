@@ -6,11 +6,11 @@ import android.view.Window;
 import android.view.WindowManager;
 
 import com.cleanapps.timekeeper.R;
+import com.cleanapps.timekeeper.components.ParallaxImageView;
 
 public class ActivityRegistration extends Activity {
 
 	private ParallaxImageView mBackground;
-
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub

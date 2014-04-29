@@ -1,4 +1,4 @@
-package com.cleanapps.timekeeper.main;
+package com.cleanapps.timekeeper.components;
 
 import android.content.Context;
 import android.hardware.SensorEvent;
