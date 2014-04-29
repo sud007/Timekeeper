@@ -1,4 +1,4 @@
-package com.cleanapps.model;
+package com.cleanapps.timekeeper.model;
 
 public class MainListData {
 	public MainListData() {

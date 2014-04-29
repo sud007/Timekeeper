@@ -4,11 +4,19 @@
     <string name="app_name">Time Keeper</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    
+    <!-- Splash animation activity -->
+    <string name="activity_splashanim_timeKeeper">Time Keeper</string>
+
+    <!-- Registration Activity -->
+    <string name="activity_registration_hi">HI!</string>
+    <string name="activity_registration_welcome_text">Welcome to the TimeKeeper. Your personal Office-Time manager.</string>
+    <string name="activity_registration_google_plus">Sign in with Google</string>
+    <!-- Main Activity -->
     <string name="fragment_data_input_login_button">Log In</string>
     <string name="fragment_data_input_client_hint">Client info</string>
     <string name="fragment_data_input_work_done_hint">Work Details</string>
     <string name="fragment_data_input_remarks_hint">Remarks</string>
     <string name="fragment_data_input_save_button">Save Data</string>
-<string name="fragment_data_input_logout_button">Log Out</string>
+    <string name="fragment_data_input_logout_button">Log Out</string>
+
 </resources>

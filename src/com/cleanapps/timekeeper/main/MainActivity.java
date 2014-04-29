@@ -1,4 +1,4 @@
-package com.cleanapps.timekeeper;
+package com.cleanapps.timekeeper.main;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -25,10 +25,10 @@ import android.widget.EditText;
 import android.widget.Switch;
 import android.widget.Toast;
 
-import com.cleanapps.model.MainListData;
 import com.cleanapps.timekeeper.dbhelper.LoginDBHelper;
-import com.cleanapps.util.TimeKeeperConstants;
-import com.cleanapps.util.TimeKeeperUtilMethods;
+import com.cleanapps.timekeeper.model.MainListData;
+import com.cleanapps.timekeeper.util.TimeKeeperConstants;
+import com.cleanapps.timekeeper.util.TimeKeeperUtilMethods;
 import com.cleanapps.timekeeper.R;
 
 public class MainActivity extends Activity implements OnClickListener {

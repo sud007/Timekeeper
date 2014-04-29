@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent_white" >
+
+        <TextView
+            android:id="@+id/activity_registration_hi_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="@string/activity_registration_hi"
+            android:textSize="@dimen/activity_title_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_below="@+id/activity_registration_hi_text"
+            android:text="@string/activity_registration_welcome_text"
+            android:textSize="@dimen/activity_large_text" />
+
+        <Button
+            android:id="@+id/activity_registration_sign_in_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:text="@string/activity_registration_google_plus"
+            android:background="@drawable/signin_button_selector"
+            android:layout_centerInParent="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin_reduced"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/activity_registration_sign_in_button"
+            android:background="@drawable/menu_left_devider" />
+    </RelativeLayout>
+    <!-- <com.cleanapps.timekeeper.main.ParallaxImageView -->
+    <!-- android:id="@android:id/background" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- parallax:tiltSensitivity="2.5" -->
+    <!-- /> -->
+
+</RelativeLayout>

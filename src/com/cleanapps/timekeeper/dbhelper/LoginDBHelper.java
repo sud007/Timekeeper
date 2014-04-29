@@ -1,7 +1,7 @@
 package com.cleanapps.timekeeper.dbhelper;
 
-import com.cleanapps.model.MainListData;
-import com.cleanapps.timekeeper.MainActivity;
+import com.cleanapps.timekeeper.main.MainActivity;
+import com.cleanapps.timekeeper.model.MainListData;
 
 import android.app.Application;
 import android.content.ContentValues;

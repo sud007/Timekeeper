@@ -4,5 +4,7 @@
     <color name="red_logout">#FFFF5555</color>
     <color name="grey_dark">#FF444444</color>
     <color name="grey_light">#FFBBBBBB</color>
+    <color name="opaque_white">#99727272</color>
+    <color name="transparent_white">#77FFFFFF</color>
     
 </resources>

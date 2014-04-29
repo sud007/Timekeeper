@@ -1,4 +1,4 @@
-package com.cleanapps.util;
+package com.cleanapps.timekeeper.util;
 
 import android.content.Context;
 import android.content.SharedPreferences;

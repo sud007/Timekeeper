@@ -1,4 +1,4 @@
-package com.cleanapps.util;
+package com.cleanapps.timekeeper.util;
 
 public class TimeKeeperConstants {
 
