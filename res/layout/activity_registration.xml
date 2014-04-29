@@ -1,5 +1,5 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/com.cleanapps.timekeeper.components"
+    xmlns:parallax="http://schemas.android.com/apk/com.cleanapps.timekeeper.components"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
@@ -8,7 +8,7 @@
         android:id="@+id/background"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:tiltSensitivity="2.5" />
+        parallax:tiltSensitivity="2.5" />
 
     <RelativeLayout
         android:layout_width="match_parent"
