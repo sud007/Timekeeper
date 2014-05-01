@@ -284,7 +284,10 @@ containing a value of this type.
         public static final int menu_left_devider=0x7f020008;
         public static final int signin_button_selector=0x7f020009;
         public static final int splash_bg=0x7f02000a;
-        public static final int text_field=0x7f02000b;
+        public static final int start_button=0x7f02000b;
+        public static final int start_button_selector=0x7f02000c;
+        public static final int stop_button_selector=0x7f02000d;
+        public static final int text_field=0x7f02000e;
     }
     public static final class id {
         public static final int action_settings=0x7f060013;

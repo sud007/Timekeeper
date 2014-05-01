@@ -14,7 +14,7 @@ public class FragmentGraphsScreen extends Fragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
-		View v = inflater.inflate(R.layout.fragment_timer_screen, null);
+		View v = inflater.inflate(R.layout.fragment_graphs_screen, null);
 		return v;
 	}
 

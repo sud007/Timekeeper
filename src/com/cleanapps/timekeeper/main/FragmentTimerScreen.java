@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 import com.cleanapps.timekeeper.R;
 
-public class FragmentTimerScreen extends Fragment implements OnClickListener {
+public class FragmentTimerScreen extends Fragment {
 	private Button id;
 	private final String tag = FragmentTimerScreen.class.getSimpleName();
 
@@ -36,24 +36,10 @@ public class FragmentTimerScreen extends Fragment implements OnClickListener {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 			
-				Toast.makeText(getActivity(), "yay", Toast.LENGTH_SHORT).show();
+				Toast.makeText(getActivity(), "yaykbkj", Toast.LENGTH_SHORT).show();
 				Log.i(tag, "oh");
 			}
 		});
 	}
 
-	@Override
-	public void onClick(View v) {
-		// TODO Auto-generated method stub
-		switch (v.getId()) {
-		case R.layout.fragment_timer_screen:
-			Toast.makeText(getActivity(), "yay", Toast.LENGTH_SHORT).show();
-			Log.i(tag, "clicked");
-			break;
-
-		default:
-			break;
-		}
-
-	}
 }

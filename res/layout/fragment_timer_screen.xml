@@ -11,8 +11,9 @@
 <!--         android:textSize="36sp" /> -->
     <Button
         android:id="@+id/dididid"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:background="@drawable/start_button_selector"
         android:layout_centerInParent="true"
         android:text="Button" />
 

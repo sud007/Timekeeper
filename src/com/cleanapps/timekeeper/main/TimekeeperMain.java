@@ -7,36 +7,46 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.util.TypedValue;
-import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.Toast;
 
 import com.astuetz.PagerSlidingTabStrip;
 import com.cleanapps.timekeeper.R;
 import com.cleanapps.timekeeper.util.TimeKeeperConstants;
 
-public class TimekeeperMain extends FragmentActivity implements OnClickListener {
+public class TimekeeperMain extends FragmentActivity{
+	private final String tag = TimekeeperMain.class.getSimpleName();
 
 	private PagerSlidingTabStrip tabs;
-	private ViewPager pager;
+	private ViewPager mPager;
 	private MyPagerAdapter adapter;
+//	private TitlePageIndicator mpageIndicator;
+//	private FragmentAdapter mFragmentAdapter;
+	
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.timer_screen);
 
+
 		tabs = (PagerSlidingTabStrip) findViewById(R.id.activity_timer_screen_tabs);
-		pager = (ViewPager) findViewById(R.id.activity_timer_screen_viewpager);
+		mPager = (ViewPager) findViewById(R.id.activity_timer_screen_viewpager);
+//		mFragmentAdapter=new FragmentAdapter(getSupportFragmentManager());
+//		mpageIndicator=(TitlePageIndicator)findViewById(R.id.indicator);
 		adapter = new MyPagerAdapter(getSupportFragmentManager());
-		pager.setAdapter(adapter);
+		
+		
+		mPager.setAdapter(adapter);
 
 		final int pageMargin = (int) TypedValue.applyDimension(
 				TypedValue.COMPLEX_UNIT_DIP, 4, getResources()
 						.getDisplayMetrics());
-		pager.setPageMargin(pageMargin);
+		mPager.setPageMargin(pageMargin);
 
-		tabs.setViewPager(pager);
+		tabs.setViewPager(mPager);
+		
+//		mpageIndicator.setViewPager(mPager);
+		
 	}
 
 	public class MyPagerAdapter extends FragmentPagerAdapter {
@@ -57,35 +67,29 @@ public class TimekeeperMain extends FragmentActivity implements OnClickListener 
 		public int getCount() {
 			return TITLES.length;
 		}
-//
-//		@Override
-//		public Fragment getItem(int position) {
-//			Fragment fragment = new FragmentTimerScreen();
-//			switch (position) {
-//			case 0:
-//				fragment = new FragmentTimerScreen();
-//				break;
-//			case 1:
-//				fragment = new FragmentMonitorScreen();
-//				Toast.makeText(getBaseContext(), "2", Toast.LENGTH_SHORT).show();
-//				break;
-//			case 2:
-//				fragment = new FragmentGraphsScreen();
-//				break;
-//			}
-//			return fragment;
-//		}
-		
+
 		@Override
 		public Fragment getItem(int position) {
-			return SuperAwesomeCardFragment.newInstance(position);
+			Fragment fragment = new FragmentMonitorScreen();
+			switch (position) {
+			case 0:
+				fragment = new FragmentTimerScreen();
+				break;
+			case 1:
+				fragment = new FragmentMonitorScreen();
+				break;
+			case 2:
+				fragment = new FragmentGraphsScreen();
+				break;
+			}
+			return fragment;
 		}
+//		
+//		@Override
+//		public Fragment getItem(int position) {
+//			return SuperAwesomeCardFragment.newInstance(position);
+//		}
 
 	}
 
-	@Override
-	public void onClick(View v) {
-		// TODO Auto-generated method stub
-		
-	}
 }
