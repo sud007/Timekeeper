@@ -20,4 +20,9 @@
     <string name="fragment_data_input_save_button">Save Data</string>
     <string name="fragment_data_input_logout_button">Log Out</string>
 
+    <!-- Fragment Activity -->
+    <string name="fragment_activity_button_login">Login</string>
+    <string name="fragment_activity_button_logout">Logout</string>
+    <string name="fragment_activity_time">00:00</string>
+
 </resources>

@@ -20,19 +20,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/vertical_margin"
             android:text="@string/activity_registration_hi"
-            android:textSize="@dimen/activity_title_text" />
+            android:textSize="@dimen/title_text" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/activity_registration_hi_text"
             android:layout_centerHorizontal="true"
-            android:layout_marginLeft="@dimen/activity_horizontal_margin"
-            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/horizontal_margin"
+            android:layout_marginRight="@dimen/horizontal_margin"
             android:text="@string/activity_registration_welcome_text"
-            android:textSize="@dimen/activity_large_text" />
+            android:textSize="@dimen/large_text" />
 
 <!--         <com.cleanapps.timekeeper.components.FloatLabelEditText -->
 <!--             android:id="@+id/activity_change_password_old_password" -->
@@ -54,9 +54,9 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="@dimen/activity_vertical_margin"
-            android:layout_marginLeft="@dimen/activity_horizontal_margin"
-            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/vertical_margin"
+            android:layout_marginLeft="@dimen/horizontal_margin"
+            android:layout_marginRight="@dimen/horizontal_margin"
             android:background="@drawable/signin_button_selector" />
  <!-- <ImageView -->
             <!-- android:layout_width="match_parent" -->

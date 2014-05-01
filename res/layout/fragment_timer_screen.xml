@@ -4,17 +4,31 @@
     android:layout_height="match_parent"
     android:background="@color/red" >
 
-<!--     <TextView -->
-<!--         android:layout_width="wrap_content" -->
-<!--         android:layout_height="wrap_content" -->
-<!--         android:text="asdfasdva" -->
-<!--         android:textSize="36sp" /> -->
+    <!-- <TextView -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:text="asdfasdva" -->
+    <!-- android:textSize="36sp" /> -->
+
     <Button
         android:id="@+id/dididid"
         android:layout_width="160dp"
         android:layout_height="160dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/vertical_margin"
         android:background="@drawable/start_button_selector"
-        android:layout_centerInParent="true"
-        android:text="Button" />
+        android:text="@string/fragment_activity_button_login"
+        android:textSize="@dimen/title_text"
+        android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_big"
+        android:text="@string/fragment_activity_time"
+        android:textSize="@dimen/timer_text"
+         />
 
 </RelativeLayout>

@@ -257,6 +257,7 @@ containing a value of this type.
         public static final int white=0x7f050007;
     }
     public static final class dimen {
+        public static final int button_textSize=0x7f070008;
         /**  Default screen margins, per the Android Design guidelines. 
 
          Example customization of dimensions originally defined in res/values/dimens.xml
@@ -264,13 +265,14 @@ containing a value of this type.
          would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively).
     
          */
-        public static final int activity_horizontal_margin=0x7f070000;
-        public static final int activity_horizontal_margin_reduced=0x7f070003;
-        public static final int activity_large_text=0x7f070005;
-        public static final int activity_title_text=0x7f070004;
-        public static final int activity_vertical_margin=0x7f070001;
-        public static final int activity_vertical_margin_reduced=0x7f070002;
-        public static final int button_textSize=0x7f070006;
+        public static final int horizontal_margin=0x7f070000;
+        public static final int horizontal_margin_reduced=0x7f070003;
+        public static final int large_text=0x7f070006;
+        public static final int margin_big=0x7f070004;
+        public static final int timer_text=0x7f070007;
+        public static final int title_text=0x7f070005;
+        public static final int vertical_margin=0x7f070001;
+        public static final int vertical_margin_reduced=0x7f070002;
     }
     public static final class drawable {
         public static final int background_tab=0x7f020000;
@@ -339,6 +341,11 @@ containing a value of this type.
          */
         public static final int activity_splashanim_timeKeeper=0x7f080003;
         public static final int app_name=0x7f080000;
+        /**  Fragment Activity 
+         */
+        public static final int fragment_activity_button_login=0x7f08000e;
+        public static final int fragment_activity_button_logout=0x7f08000f;
+        public static final int fragment_activity_time=0x7f080010;
         public static final int fragment_data_input_client_hint=0x7f080009;
         /**  Main Activity 
          */
