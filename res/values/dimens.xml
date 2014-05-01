@@ -7,5 +7,6 @@
     <dimen name="activity_horizontal_margin_reduced">8dp</dimen>
     <dimen name="activity_title_text">40sp</dimen>
     <dimen name="activity_large_text">22sp</dimen>
+    <dimen name="button_textSize">20sp</dimen>
 
 </resources>

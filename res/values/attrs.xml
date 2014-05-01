@@ -20,5 +20,6 @@
             <enum name="half" value="2" />
         </attr>
     </declare-styleable>
+    
 
 </resources>

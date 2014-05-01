@@ -1,5 +1,5 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:parallax="http://schemas.android.com/apk/com.cleanapps.timekeeper.components"
+    xmlns:app="http://schemas.android.com/apk/com.cleanapps.timekeeper.components"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
@@ -8,7 +8,7 @@
         android:id="@+id/background"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        parallax:tiltSensitivity="2.5" />
+        app:tiltSensitivity="2.5" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -34,38 +34,41 @@
             android:text="@string/activity_registration_welcome_text"
             android:textSize="@dimen/activity_large_text" />
 
+<!--         <com.cleanapps.timekeeper.components.FloatLabelEditText -->
+<!--             android:id="@+id/activity_change_password_old_password" -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             app:fitScreenWidth="full" -->
+<!--             android:layout_above="@+id/activity_registration_sign_in_button" -->
+<!--             app:hint="@string/activity_registration_edit_hint" -->
+<!--             app:textSize="16sp" -->
+<!--             app:textColor="@color/green_login" -->
+<!--             app:textColorHintFocused="@color/orange" -->
+<!--             app:textColorHintUnFocused="@color/grey" -->
+<!--             app:textHintColor="@color/orange" -->
+<!--              /> -->
+        
         <Button
             android:id="@+id/activity_registration_sign_in_button"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
             android:layout_marginRight="@dimen/activity_horizontal_margin"
-            android:background="@drawable/signin_button_selector"
-            android:text="@string/activity_registration_google_plus" />
+            android:background="@drawable/signin_button_selector" />
+ <!-- <ImageView -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_centerHorizontal="true" -->
+            <!-- android:layout_marginLeft="@dimen/activity_horizontal_margin" -->
+            <!-- android:layout_marginRight="@dimen/activity_horizontal_margin" -->
+            <!-- android:layout_marginTop="@dimen/activity_vertical_margin_reduced" -->
+            <!-- android:background="@drawable/menu_left_devider" /> -->
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/activity_registration_sign_in_button"
-            android:layout_centerHorizontal="true"
-            android:layout_marginLeft="@dimen/activity_horizontal_margin"
-            android:layout_marginRight="@dimen/activity_horizontal_margin"
-            android:layout_marginTop="@dimen/activity_vertical_margin_reduced"
-            android:background="@drawable/menu_left_devider" />
-        
-        <com.cleanapps.timekeeper.components.FloatLabelEditText
-            android:id="@+id/activity_change_password_old_password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            app:hint="@string/activity_change_password_old_password_hint"
-            app:textColor="@color/white"
-            app:textColorHintFocused="@color/red"
-            app:textColorHintUnFocused="@color/grey"
-            app:textHintColor="@color/faded_white"
-            app:textSize="@dimen/button_textSize" />
+
+            
     </RelativeLayout>
 
 </RelativeLayout>

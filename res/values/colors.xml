@@ -6,5 +6,9 @@
     <color name="grey_light">#FFBBBBBB</color>
     <color name="opaque_white">#99727272</color>
     <color name="transparent_white">#77FFFFFF</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="orange">#FFffa500</color>
+    <color name="grey">#FF808080</color>
+    <color name="faded_white">#BBFFFFFF</color>
     
 </resources>
