@@ -72,7 +72,7 @@ public class ActivityRegistration extends Activity implements OnClickListener {
 		case R.id.activity_registration_sign_in_button:
 			Toast.makeText(this, "Success", Toast.LENGTH_SHORT).show();
 			
-			 Intent intent = new Intent(ActivityRegistration.this, MainActivity.class);
+			 Intent intent = new Intent(ActivityRegistration.this, TimekeeperMain.class);
 			 ActivityRegistration.this.startActivity(intent);
 			 ActivityRegistration.this.finish();
 

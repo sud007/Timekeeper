@@ -16,5 +16,12 @@ public class TimeKeeperConstants {
 	public static final String THURSDAY = "Thursday";
 	public static final String FRIDAY = "Friday";
 	public static final String SATURDAY = "Saturday";
+	
+	/*
+	 * Name of the tabs
+	 */
 
+	public static final String ACTIVITY = "Activity";
+	public static final String MONITOR = "Monitor";
+	public static final String LOG = "Graphs";
 }
