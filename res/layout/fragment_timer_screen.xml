@@ -4,16 +4,16 @@
     android:layout_height="match_parent"
     android:background="@color/red" >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="asdfasdva"
-        android:textSize="36sp" />
+<!--     <TextView -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:text="asdfasdva" -->
+<!--         android:textSize="36sp" /> -->
     <Button
         android:id="@+id/dididid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="asdfasdva" />
+        android:text="Button" />
 
 </RelativeLayout>

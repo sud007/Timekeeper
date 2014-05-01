@@ -7,13 +7,15 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.util.TypedValue;
+import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.Toast;
 
 import com.astuetz.PagerSlidingTabStrip;
 import com.cleanapps.timekeeper.R;
 import com.cleanapps.timekeeper.util.TimeKeeperConstants;
 
-public class TimekeeperMain extends FragmentActivity {
+public class TimekeeperMain extends FragmentActivity implements OnClickListener {
 
 	private PagerSlidingTabStrip tabs;
 	private ViewPager pager;
@@ -79,5 +81,11 @@ public class TimekeeperMain extends FragmentActivity {
 			return SuperAwesomeCardFragment.newInstance(position);
 		}
 
+	}
+
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+		
 	}
 }
