@@ -17,4 +17,12 @@ public class TimeKeeperConstants {
 	public static final String FRIDAY = "Friday";
 	public static final String SATURDAY = "Saturday";
 
+
+	/*
+	 * WEEKEND TYPE
+	 */
+	public static int WEEKEND_ONE_DAY =1;
+	public static int WEEKEND_TWO_DAY =2;
+
+
 }
