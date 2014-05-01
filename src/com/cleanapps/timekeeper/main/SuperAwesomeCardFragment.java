@@ -25,7 +25,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.FrameLayout.LayoutParams;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.cleanapps.timekeeper.R;
 
@@ -51,25 +53,31 @@ public class SuperAwesomeCardFragment extends Fragment {
 	}
 
 	@Override
-	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+	public View onCreateView(LayoutInflater inflater, ViewGroup container,
+			Bundle savedInstanceState) {
 
-		LayoutParams params = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
-
-		FrameLayout fl = new FrameLayout(getActivity());
-		fl.setLayoutParams(params);
-
-		final int margin = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 8, getResources()
-				.getDisplayMetrics());
-
-		TextView v = new TextView(getActivity());
-		params.setMargins(margin, margin, margin, margin);
+		LayoutParams params = new LayoutParams(LayoutParams.MATCH_PARENT,
+				LayoutParams.MATCH_PARENT);
+		View v = new View(getActivity());
 		v.setLayoutParams(params);
-		v.setLayoutParams(params);
-		v.setGravity(Gravity.CENTER);
-		v.setText("CARD " + (position + 1));
 
-		fl.addView(v);
-		return fl;
+//		final int margin = (int) TypedValue.applyDimension(
+//				TypedValue.COMPLEX_UNIT_DIP, 8, getResources()
+//						.getDisplayMetrics());
+
+		Toast.makeText(getActivity(), "yay", Toast.LENGTH_SHORT).show();
+		switch (position) {
+		case 0:
+			v = inflater.inflate(R.layout.fragment_timer_screen, null);
+			break;
+		case 1:
+			v = inflater.inflate(R.layout.fragment_monitor_screen, null);
+			break;
+		case 2:
+			v = inflater.inflate(R.layout.fragment_graphs_screen, null);
+			break;
+		}
+
+		return v;
 	}
-
 }

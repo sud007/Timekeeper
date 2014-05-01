@@ -231,15 +231,28 @@ containing a value of this type.
         public static final int tiltSensitivity=0x7f01000c;
     }
     public static final class color {
+        public static final int background=0x7f05000b;
         public static final int background_tab_pressed=0x7f050000;
+        public static final int black=0x7f05000d;
+        public static final int blue_light=0x7f050012;
+        public static final int blue_light_faded=0x7f050013;
+        public static final int dark_dark_grey=0x7f050015;
+        public static final int dark_grey=0x7f050014;
+        public static final int dark_red=0x7f050010;
         public static final int faded_white=0x7f05000a;
         public static final int green_login=0x7f050001;
         public static final int grey=0x7f050009;
         public static final int grey_dark=0x7f050003;
         public static final int grey_light=0x7f050004;
+        public static final int light_grey=0x7f050016;
         public static final int opaque_white=0x7f050005;
         public static final int orange=0x7f050008;
+        public static final int red=0x7f05000c;
+        public static final int red_faded1=0x7f05000f;
+        public static final int red_faded2=0x7f050011;
         public static final int red_logout=0x7f050002;
+        public static final int transparent=0x7f05000e;
+        public static final int transparent_black=0x7f050017;
         public static final int transparent_white=0x7f050006;
         public static final int white=0x7f050007;
     }
@@ -274,16 +287,17 @@ containing a value of this type.
         public static final int text_field=0x7f02000b;
     }
     public static final class id {
-        public static final int action_settings=0x7f060012;
+        public static final int action_settings=0x7f060013;
         public static final int activity_registration_hi_text=0x7f060004;
         public static final int activity_registration_sign_in_button=0x7f060005;
         public static final int activity_splashanim_title_text=0x7f060006;
-        public static final int activity_timer_screen_tabs=0x7f060010;
-        public static final int activity_timer_screen_viewpager=0x7f060011;
+        public static final int activity_timer_screen_tabs=0x7f060011;
+        public static final int activity_timer_screen_viewpager=0x7f060012;
         public static final int background=0x7f060003;
         public static final int container=0x7f060002;
         public static final int custom_comp_floating_label_edit_text=0x7f06000f;
         public static final int custom_comp_floating_label_hint=0x7f06000e;
+        public static final int dididid=0x7f060010;
         public static final int fragment_data_bottom_container=0x7f06000b;
         public static final int fragment_data_input_client_info=0x7f060008;
         public static final int fragment_data_input_login_button=0x7f060007;
@@ -301,8 +315,11 @@ containing a value of this type.
         public static final int activity_splash=0x7f030003;
         public static final int data_input=0x7f030004;
         public static final int floatlabel_edittext=0x7f030005;
-        public static final int fragment_main=0x7f030006;
-        public static final int timer_screen=0x7f030007;
+        public static final int fragment_activity_main=0x7f030006;
+        public static final int fragment_graphs_screen=0x7f030007;
+        public static final int fragment_monitor_screen=0x7f030008;
+        public static final int fragment_timer_screen=0x7f030009;
+        public static final int timer_screen=0x7f03000a;
     }
     public static final class menu {
         public static final int main=0x7f0a0000;

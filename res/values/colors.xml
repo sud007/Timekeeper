@@ -10,5 +10,18 @@
     <color name="orange">#FFffa500</color>
     <color name="grey">#FF808080</color>
     <color name="faded_white">#BBFFFFFF</color>
+    <color name="background">#007575</color>
+    <color name="red">#932727</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="red_faded1">#44932727</color>
+    <color name="dark_red">#99930505</color>
+    <color name="red_faded2">#99932727</color>
+    <color name="blue_light">#81BEF7</color>
+    <color name="blue_light_faded">#2281BEF7</color>
+    <color name="dark_grey">#171717</color>
+    <color name="dark_dark_grey">#282828</color>
+    <color name="light_grey">#353535</color>
+    <color name="transparent_black">#CC000000</color>
     
 </resources>

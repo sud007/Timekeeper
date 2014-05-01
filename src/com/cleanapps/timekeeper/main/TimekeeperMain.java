@@ -7,6 +7,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.util.TypedValue;
+import android.widget.Toast;
 
 import com.astuetz.PagerSlidingTabStrip;
 import com.cleanapps.timekeeper.R;
@@ -54,10 +55,29 @@ public class TimekeeperMain extends FragmentActivity {
 		public int getCount() {
 			return TITLES.length;
 		}
-
+//
+//		@Override
+//		public Fragment getItem(int position) {
+//			Fragment fragment = new FragmentTimerScreen();
+//			switch (position) {
+//			case 0:
+//				fragment = new FragmentTimerScreen();
+//				break;
+//			case 1:
+//				fragment = new FragmentMonitorScreen();
+//				Toast.makeText(getBaseContext(), "2", Toast.LENGTH_SHORT).show();
+//				break;
+//			case 2:
+//				fragment = new FragmentGraphsScreen();
+//				break;
+//			}
+//			return fragment;
+//		}
+		
 		@Override
 		public Fragment getItem(int position) {
 			return SuperAwesomeCardFragment.newInstance(position);
 		}
+
 	}
 }
