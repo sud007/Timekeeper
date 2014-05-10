@@ -5,7 +5,7 @@ public class TimeKeeperConstants {
 	public static final String IS_LOGGED_IN = "isLoggedIn";
 	public static final String LOGIN_TIME = "loginTime";
 	public static final String LOGIN_DATE = "loginDate";
-
+	public static final String IS_RUNNING = "isRunning";
 	/*
 	 * days of the week
 	 */
@@ -16,7 +16,7 @@ public class TimeKeeperConstants {
 	public static final String THURSDAY = "Thursday";
 	public static final String FRIDAY = "Friday";
 	public static final String SATURDAY = "Saturday";
-	
+
 	/*
 	 * Name of the tabs
 	 */
