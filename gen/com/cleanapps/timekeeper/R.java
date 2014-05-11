@@ -257,7 +257,7 @@ containing a value of this type.
         public static final int white=0x7f050007;
     }
     public static final class dimen {
-        public static final int button_textSize=0x7f070008;
+        public static final int button_textSize=0x7f070009;
         /**  Default screen margins, per the Android Design guidelines. 
 
          Example customization of dimensions originally defined in res/values/dimens.xml
@@ -266,13 +266,14 @@ containing a value of this type.
     
          */
         public static final int horizontal_margin=0x7f070000;
-        public static final int horizontal_margin_reduced=0x7f070003;
-        public static final int large_text=0x7f070006;
-        public static final int margin_big=0x7f070004;
-        public static final int timer_text=0x7f070007;
-        public static final int title_text=0x7f070005;
+        public static final int horizontal_margin_reduced=0x7f070004;
+        public static final int large_text=0x7f070007;
+        public static final int margin_big=0x7f070005;
+        public static final int timer_text=0x7f070008;
+        public static final int title_text=0x7f070006;
         public static final int vertical_margin=0x7f070001;
-        public static final int vertical_margin_reduced=0x7f070002;
+        public static final int vertical_margin_increased=0x7f070002;
+        public static final int vertical_margin_reduced=0x7f070003;
     }
     public static final class drawable {
         public static final int background_tab=0x7f020000;
@@ -292,17 +293,16 @@ containing a value of this type.
         public static final int text_field=0x7f02000e;
     }
     public static final class id {
-        public static final int action_settings=0x7f060013;
+        public static final int action_settings=0x7f060014;
         public static final int activity_registration_hi_text=0x7f060004;
         public static final int activity_registration_sign_in_button=0x7f060005;
         public static final int activity_splashanim_title_text=0x7f060006;
-        public static final int activity_timer_screen_tabs=0x7f060011;
-        public static final int activity_timer_screen_viewpager=0x7f060012;
+        public static final int activity_timer_screen_tabs=0x7f060012;
+        public static final int activity_timer_screen_viewpager=0x7f060013;
         public static final int background=0x7f060003;
         public static final int container=0x7f060002;
         public static final int custom_comp_floating_label_edit_text=0x7f06000f;
         public static final int custom_comp_floating_label_hint=0x7f06000e;
-        public static final int dididid=0x7f060010;
         public static final int fragment_data_bottom_container=0x7f06000b;
         public static final int fragment_data_input_client_info=0x7f060008;
         public static final int fragment_data_input_login_button=0x7f060007;
@@ -310,6 +310,8 @@ containing a value of this type.
         public static final int fragment_data_input_remarks=0x7f06000a;
         public static final int fragment_data_input_save_button=0x7f06000c;
         public static final int fragment_data_input_work_done=0x7f060009;
+        public static final int fragment_timer_screen_login_btn=0x7f060010;
+        public static final int fragment_timer_screen_login_time=0x7f060011;
         public static final int full=0x7f060000;
         public static final int half=0x7f060001;
     }

@@ -1,5 +1,6 @@
 package com.cleanapps.timekeeper.main;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.Fragment;
@@ -41,6 +42,7 @@ public class FragmentTimerScreen extends Fragment {
 
 		isLoggedIn = TimeKeeperUtilMethods.getLoginStatus(getActivity());
 		Log.i(tag, isLoggedIn + "");
+		Log.e(tag, "onViewCreated");
 		timerView = (TextView) view
 				.findViewById(R.id.fragment_timer_screen_login_time);
 		id = (Button) view.findViewById(R.id.fragment_timer_screen_login_btn);
@@ -81,6 +83,17 @@ public class FragmentTimerScreen extends Fragment {
 		setView(view);
 	}
 
+
+
+	
+
+	@Override
+	public void onStop() {
+		// TODO Auto-generated method stub
+		Log.e(tag, "onStop");
+		super.onStop();
+	}
+
 	private void setView(View view) {
 
 		int density = getResources().getDisplayMetrics().densityDpi;
@@ -99,16 +112,16 @@ public class FragmentTimerScreen extends Fragment {
 			params.width = 240;
 			params.height = 240;
 
-//			Toast.makeText(getActivity(), "X", Toast.LENGTH_SHORT).show();
+			// Toast.makeText(getActivity(), "X", Toast.LENGTH_SHORT).show();
 
 			break;
 		case DisplayMetrics.DENSITY_XXHIGH:
-//			Toast.makeText(getActivity(), "XX", Toast.LENGTH_SHORT).show();
+			// Toast.makeText(getActivity(), "XX", Toast.LENGTH_SHORT).show();
 			params.width = 320;
 			params.height = 320;
 			break;
 		case DisplayMetrics.DENSITY_XXXHIGH:
-//			Toast.makeText(getActivity(), "XXX", Toast.LENGTH_SHORT).show();
+			// Toast.makeText(getActivity(), "XXX", Toast.LENGTH_SHORT).show();
 			id.setWidth(320);
 			id.setHeight(320);
 			break;
@@ -117,21 +130,65 @@ public class FragmentTimerScreen extends Fragment {
 
 		id.setLayoutParams(params);
 
-		if (isLoggedIn) {
+//		if (isLoggedIn) {
+//
+//			TimeKeeperUtilMethods.animateTextColor(timerView);
+//
+//			if (TimeKeeperUtilMethods.getTimerRunning(getActivity()) == false) {
+//
+//				long currentTimeInMillis = TimeKeeperUtilMethods
+//						.getLoginTime(getActivity());
+//				TimeKeeperUtilMethods.setLoginStatus(getActivity(), true);
+//				timer = new LoginTimeCounter(currentTimeInMillis, 1000);
+//				timer.Start();
+//			}
+//		}
+	}
+
+
+	@Override
+	public void onPause() {
+		// TODO Auto-generated method stub
+		Log.e(tag, "onPause");
+		super.onPause();
+		if (TimeKeeperUtilMethods.getTimerRunning(getActivity()) == true) {
+
+			timer.StopTimer();
+			TimeKeeperUtilMethods.setTimerRunning(getActivity(), false);
 			
+		}
+	}
+	
+	@Override
+	public void onStart() {
+		// TODO Auto-generated method stub
+		Log.e(tag, "onStart");
+		
+		if (isLoggedIn) {
+
 			TimeKeeperUtilMethods.animateTextColor(timerView);
 
-			if (TimeKeeperUtilMethods.getTimerRunning(getActivity())==false) {
+			if (TimeKeeperUtilMethods.getTimerRunning(getActivity()) == false) {
 
 				long currentTimeInMillis = TimeKeeperUtilMethods
 						.getLoginTime(getActivity());
 				TimeKeeperUtilMethods.setLoginStatus(getActivity(), true);
+				TimeKeeperUtilMethods.setTimerRunning(getActivity(), true);
 				timer = new LoginTimeCounter(currentTimeInMillis, 1000);
 				timer.Start();
 			}
-		} 
+		}
+		super.onStart();
 	}
 
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		Log.e(tag, "onCreate");
+		super.onCreate(savedInstanceState);
+	}
+
+	// ###########################################################################
 	/**
 	 * class for counting the remaining time and display it to the user.
 	 * 
