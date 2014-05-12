@@ -1,5 +1,6 @@
 package com.cleanapps.timekeeper.main;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -63,14 +64,28 @@ public class TimekeeperMain extends FragmentActivity {
 
 		switch (item.getItemId()) {
 
-		case R.id.activity_timekeeper_main_action_contact:
+		case R.id.activity_timekeeper_main_more:
 			// QuickContactFragment dialog = new QuickContactFragment();
 			// dialog.show(getSupportFragmentManager(), "QuickContactFragment");
 			return true;
+		case R.id.activity_timekeeper_main_settings:
+			this.startActivity(new Intent(this,
+					SettingsTimekeeper.class));
+			
+			return true;
+		case R.id.activity_timekeeper_main_help:
+			this.startActivity(new Intent(this,
+					HelpTimekeeper.class));
+			return true;
+		case R.id.activity_timekeeper_main_about:
+			this.startActivity(new Intent(this,
+					AboutTimekeeper.class));
+			return true;
+		default:
+			return super.onOptionsItemSelected(item);
 
 		}
 
-		return super.onOptionsItemSelected(item);
 	}
 
 	/**

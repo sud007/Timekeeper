@@ -1,6 +1,7 @@
 package com.cleanapps.timekeeper.main;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.Fragment;
@@ -47,14 +48,17 @@ public class FragmentTimerScreen extends Fragment {
 		Log.e(tag, "onViewCreated");
 		timerView = (TextView) view
 				.findViewById(R.id.fragment_timer_screen_login_time);
-		rel = (RelativeLayout) view.findViewById(R.id.fragment_timer_screen_add_details_btn);
+		rel = (RelativeLayout) view
+				.findViewById(R.id.fragment_timer_screen_add_details_btn);
 		rel.setOnClickListener(new OnClickListener() {
-			
+
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				Toast.makeText(getActivity(), "X", Toast.LENGTH_SHORT).show();
-				
+				getActivity().startActivity(
+						new Intent(getActivity(), ActivityDetails.class));
+
 			}
 		});
 		id = (Button) view.findViewById(R.id.fragment_timer_screen_login_btn);
@@ -94,10 +98,6 @@ public class FragmentTimerScreen extends Fragment {
 
 		setView(view);
 	}
-
-
-
-	
 
 	@Override
 	public void onStop() {
@@ -142,21 +142,20 @@ public class FragmentTimerScreen extends Fragment {
 
 		id.setLayoutParams(params);
 
-//		if (isLoggedIn) {
-//
-//			TimeKeeperUtilMethods.animateTextColor(timerView);
-//
-//			if (TimeKeeperUtilMethods.getTimerRunning(getActivity()) == false) {
-//
-//				long currentTimeInMillis = TimeKeeperUtilMethods
-//						.getLoginTime(getActivity());
-//				TimeKeeperUtilMethods.setLoginStatus(getActivity(), true);
-//				timer = new LoginTimeCounter(currentTimeInMillis, 1000);
-//				timer.Start();
-//			}
-//		}
+		// if (isLoggedIn) {
+		//
+		// TimeKeeperUtilMethods.animateTextColor(timerView);
+		//
+		// if (TimeKeeperUtilMethods.getTimerRunning(getActivity()) == false) {
+		//
+		// long currentTimeInMillis = TimeKeeperUtilMethods
+		// .getLoginTime(getActivity());
+		// TimeKeeperUtilMethods.setLoginStatus(getActivity(), true);
+		// timer = new LoginTimeCounter(currentTimeInMillis, 1000);
+		// timer.Start();
+		// }
+		// }
 	}
-
 
 	@Override
 	public void onPause() {
@@ -167,15 +166,15 @@ public class FragmentTimerScreen extends Fragment {
 
 			timer.StopTimer();
 			TimeKeeperUtilMethods.setTimerRunning(getActivity(), false);
-			
+
 		}
 	}
-	
+
 	@Override
 	public void onStart() {
 		// TODO Auto-generated method stub
 		Log.e(tag, "onStart");
-		
+
 		if (isLoggedIn) {
 
 			TimeKeeperUtilMethods.animateTextColor(timerView);

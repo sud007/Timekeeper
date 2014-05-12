@@ -1,9 +1,24 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
 
     <item
-        android:id="@+id/activity_timekeeper_main_action_contact"
+        android:id="@+id/activity_timekeeper_main_more"
         android:icon="@drawable/ic_action_overflow"
         android:showAsAction="always"
-        android:title="more"/>
+        android:title="@string/timekeer_activity_menu_overflow">
+        <menu>
+            <item
+                android:id="@+id/activity_timekeeper_main_settings"
+                android:icon="@drawable/ic_settings"
+                android:title="@string/timekeer_activity_menu_settings"/>
+            <item
+                android:id="@+id/activity_timekeeper_main_help"
+                android:icon="@drawable/ic_help"
+                android:title="@string/timekeer_activity_menu_help"/>
+            <item
+                android:id="@+id/activity_timekeeper_main_about"
+                android:icon="@drawable/ic_info"
+                android:title="@string/timekeer_activity_menu_about"/>
+        </menu>
+    </item>
 
 </menu>

@@ -13,30 +13,45 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-        
         <activity
             android:name="com.cleanapps.timekeeper.main.SplashScreen"
             android:label="@string/app_name" >
-<!--             <intent-filter> -->
-<!--                 <action android:name="android.intent.action.MAIN" /> -->
 
-<!--                 <category android:name="android.intent.category.LAUNCHER" /> -->
-<!--             </intent-filter> -->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity
             android:name="com.cleanapps.timekeeper.main.MainActivity"
             android:label="@string/app_name" >
-            
         </activity>
         <activity
             android:name="com.cleanapps.timekeeper.main.SplashAnimation"
             android:label="@string/app_name" >
-            
         </activity>
         <activity
             android:name="com.cleanapps.timekeeper.main.ActivityRegistration"
             android:label="@string/app_name" >
-            
+        </activity>
+        <activity
+            android:name="com.cleanapps.timekeeper.main.SettingsTimekeeper"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.cleanapps.timekeeper.main.AboutTimekeeper"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.cleanapps.timekeeper.main.ActivityDetails"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Transparent" >
+        </activity>
+        <activity
+            android:name="com.cleanapps.timekeeper.main.HelpTimekeeper"
+            android:label="@string/app_name" >
         </activity>
         <activity
             android:name="com.cleanapps.timekeeper.main.TimekeeperMain"
@@ -46,7 +61,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-            
         </activity>
     </application>
 

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/com.cleanapps.timekeeper.components"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.cleanapps.timekeeper.components.FloatLabelEditText
+        android:id="@+id/activity_change_password_old_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:fitScreenWidth="full"
+        app:hint="@string/activity_registration_edit_hint"
+        app:textColorHintFocused="@color/orange"
+        app:textColorHintUnFocused="@color/grey"
+        app:textSize="16sp" />
+
+    <com.cleanapps.timekeeper.components.FloatLabelEditText
+        android:id="@+id/float_label_text_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fitScreenWidth="full"
+        app:gravity="right"
+        app:hint="Right gravity"
+        app:text="Right gravity hint!"
+        app:textColorHintFocused="@color/green_login"
+        app:textColorHintUnFocused="@android:color/darker_gray"
+        app:textSize="16sp" />
+
+</LinearLayout>
