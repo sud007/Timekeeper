@@ -281,22 +281,23 @@ containing a value of this type.
         public static final int btn_signin_focus=0x7f020002;
         public static final int btn_signin_normal=0x7f020003;
         public static final int btn_signin_pressed=0x7f020004;
-        public static final int ic_launcher=0x7f020005;
-        public static final int login_button_selector=0x7f020006;
-        public static final int logout_button_selector=0x7f020007;
-        public static final int menu_left_devider=0x7f020008;
-        public static final int signin_button_selector=0x7f020009;
-        public static final int splash_bg=0x7f02000a;
-        public static final int start_button=0x7f02000b;
-        public static final int start_button_selector=0x7f02000c;
-        public static final int stop_button_selector=0x7f02000d;
-        public static final int text_field=0x7f02000e;
+        public static final int ic_action_user=0x7f020005;
+        public static final int ic_launcher=0x7f020006;
+        public static final int login_button_selector=0x7f020007;
+        public static final int logout_button_selector=0x7f020008;
+        public static final int menu_left_devider=0x7f020009;
+        public static final int signin_button_selector=0x7f02000a;
+        public static final int splash_bg=0x7f02000b;
+        public static final int start_button=0x7f02000c;
+        public static final int start_button_selector=0x7f02000d;
+        public static final int stop_button_selector=0x7f02000e;
+        public static final int text_field=0x7f02000f;
     }
     public static final class id {
-        public static final int action_settings=0x7f060014;
         public static final int activity_registration_hi_text=0x7f060004;
         public static final int activity_registration_sign_in_button=0x7f060005;
         public static final int activity_splashanim_title_text=0x7f060006;
+        public static final int activity_timekeeper_main_action_contact=0x7f060014;
         public static final int activity_timer_screen_tabs=0x7f060012;
         public static final int activity_timer_screen_viewpager=0x7f060013;
         public static final int background=0x7f060003;
