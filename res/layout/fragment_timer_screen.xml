@@ -10,6 +10,29 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:id="@+id/fragment_timer_screen_add_details_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/vertical_margin_reduced"
+                android:background="@drawable/add_details_selector"
+                android:clickable="true"
+                android:focusable="true" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_action_new"
+                    android:duplicateParentState="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
     </LinearLayout>
 
     <LinearLayout

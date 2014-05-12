@@ -12,6 +12,7 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,6 +25,7 @@ public class FragmentTimerScreen extends Fragment {
 	private long logInDuration;
 	private LoginTimeCounter timer;
 	private Boolean isLoggedIn;
+	private RelativeLayout rel;
 
 	private final String tag = FragmentTimerScreen.class.getSimpleName();
 
@@ -45,6 +47,16 @@ public class FragmentTimerScreen extends Fragment {
 		Log.e(tag, "onViewCreated");
 		timerView = (TextView) view
 				.findViewById(R.id.fragment_timer_screen_login_time);
+		rel = (RelativeLayout) view.findViewById(R.id.fragment_timer_screen_add_details_btn);
+		rel.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Toast.makeText(getActivity(), "X", Toast.LENGTH_SHORT).show();
+				
+			}
+		});
 		id = (Button) view.findViewById(R.id.fragment_timer_screen_login_btn);
 		id.setOnClickListener(new OnClickListener() {
 

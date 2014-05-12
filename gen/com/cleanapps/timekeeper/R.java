@@ -276,30 +276,37 @@ containing a value of this type.
         public static final int vertical_margin_reduced=0x7f070003;
     }
     public static final class drawable {
-        public static final int background_tab=0x7f020000;
-        public static final int btn_signin_disabled=0x7f020001;
-        public static final int btn_signin_focus=0x7f020002;
-        public static final int btn_signin_normal=0x7f020003;
-        public static final int btn_signin_pressed=0x7f020004;
-        public static final int ic_action_user=0x7f020005;
-        public static final int ic_launcher=0x7f020006;
-        public static final int login_button_selector=0x7f020007;
-        public static final int logout_button_selector=0x7f020008;
-        public static final int menu_left_devider=0x7f020009;
-        public static final int signin_button_selector=0x7f02000a;
-        public static final int splash_bg=0x7f02000b;
-        public static final int start_button=0x7f02000c;
-        public static final int start_button_selector=0x7f02000d;
-        public static final int stop_button_selector=0x7f02000e;
-        public static final int text_field=0x7f02000f;
+        public static final int add_details_selector=0x7f020000;
+        public static final int add_details_selector_design=0x7f020001;
+        public static final int background_tab=0x7f020002;
+        public static final int btn_signin_disabled=0x7f020003;
+        public static final int btn_signin_focus=0x7f020004;
+        public static final int btn_signin_normal=0x7f020005;
+        public static final int btn_signin_pressed=0x7f020006;
+        public static final int edit_text_background=0x7f020007;
+        public static final int ic_action_event=0x7f020008;
+        public static final int ic_action_new=0x7f020009;
+        public static final int ic_action_overflow=0x7f02000a;
+        public static final int ic_action_user=0x7f02000b;
+        public static final int ic_launcher=0x7f02000c;
+        public static final int login_button_selector=0x7f02000d;
+        public static final int logout_button_selector=0x7f02000e;
+        public static final int menu_left_devider=0x7f02000f;
+        public static final int signin_button_selector=0x7f020010;
+        public static final int splash_bg=0x7f020011;
+        public static final int start_button=0x7f020012;
+        public static final int start_button_selector=0x7f020013;
+        public static final int stop_button_selector=0x7f020014;
+        public static final int text_field=0x7f020015;
+        public static final int toggle_light_blue=0x7f020016;
     }
     public static final class id {
         public static final int activity_registration_hi_text=0x7f060004;
         public static final int activity_registration_sign_in_button=0x7f060005;
         public static final int activity_splashanim_title_text=0x7f060006;
-        public static final int activity_timekeeper_main_action_contact=0x7f060014;
-        public static final int activity_timer_screen_tabs=0x7f060012;
-        public static final int activity_timer_screen_viewpager=0x7f060013;
+        public static final int activity_timekeeper_main_action_contact=0x7f060015;
+        public static final int activity_timer_screen_tabs=0x7f060013;
+        public static final int activity_timer_screen_viewpager=0x7f060014;
         public static final int background=0x7f060003;
         public static final int container=0x7f060002;
         public static final int custom_comp_floating_label_edit_text=0x7f06000f;
@@ -311,8 +318,9 @@ containing a value of this type.
         public static final int fragment_data_input_remarks=0x7f06000a;
         public static final int fragment_data_input_save_button=0x7f06000c;
         public static final int fragment_data_input_work_done=0x7f060009;
-        public static final int fragment_timer_screen_login_btn=0x7f060010;
-        public static final int fragment_timer_screen_login_time=0x7f060011;
+        public static final int fragment_timer_screen_add_details_btn=0x7f060010;
+        public static final int fragment_timer_screen_login_btn=0x7f060011;
+        public static final int fragment_timer_screen_login_time=0x7f060012;
         public static final int full=0x7f060000;
         public static final int half=0x7f060001;
     }
