@@ -8,9 +8,12 @@
     <dimen name="horizontal_margin_reduced">8dp</dimen>
     <dimen name="margin_big">40dp</dimen>
     <dimen name="title_text">40sp</dimen>
+    <dimen name="ultra_small_text">10sp</dimen>
     <dimen name="large_text">22sp</dimen>
+    <dimen name="small_text">16sp</dimen>
     <dimen name="timer_text">80sp</dimen>
     <dimen name="button_textSize">20sp</dimen>
     <dimen name="padding_ultra_small">8dp</dimen>
+    <dimen name="padding_small">32dp</dimen>
 
 </resources>

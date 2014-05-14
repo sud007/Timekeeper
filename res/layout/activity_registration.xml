@@ -24,6 +24,8 @@
             android:text="@string/activity_registration_hi"
             android:textSize="@dimen/title_text" />
 
+        
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -31,23 +33,22 @@
             android:layout_centerHorizontal="true"
             android:layout_marginLeft="@dimen/horizontal_margin"
             android:layout_marginRight="@dimen/horizontal_margin"
-            android:text="@string/activity_registration_welcome_text"
             android:textSize="@dimen/large_text" />
 
-<!--         <com.cleanapps.timekeeper.components.FloatLabelEditText -->
-<!--             android:id="@+id/activity_change_password_old_password" -->
-<!--             android:layout_width="match_parent" -->
-<!--             android:layout_height="wrap_content" -->
-<!--             app:fitScreenWidth="full" -->
-<!--             android:layout_above="@+id/activity_registration_sign_in_button" -->
-<!--             app:hint="@string/activity_registration_edit_hint" -->
-<!--             app:textSize="16sp" -->
-<!--             app:textColor="@color/green_login" -->
-<!--             app:textColorHintFocused="@color/orange" -->
-<!--             app:textColorHintUnFocused="@color/grey" -->
-<!--             app:textHintColor="@color/orange" -->
-<!--              /> -->
-        
+        <!-- <com.cleanapps.timekeeper.components.FloatLabelEditText -->
+        <!-- android:id="@+id/activity_change_password_old_password" -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- app:fitScreenWidth="full" -->
+        <!-- android:layout_above="@+id/activity_registration_sign_in_button" -->
+        <!-- app:hint="@string/activity_registration_edit_hint" -->
+        <!-- app:textSize="16sp" -->
+        <!-- app:textColor="@color/green_login" -->
+        <!-- app:textColorHintFocused="@color/orange" -->
+        <!-- app:textColorHintUnFocused="@color/grey" -->
+        <!-- app:textHintColor="@color/orange" -->
+        <!-- /> -->
+
         <Button
             android:id="@+id/activity_registration_sign_in_button"
             android:layout_width="wrap_content"
@@ -58,17 +59,15 @@
             android:layout_marginLeft="@dimen/horizontal_margin"
             android:layout_marginRight="@dimen/horizontal_margin"
             android:background="@drawable/signin_button_selector" />
- <!-- <ImageView -->
-            <!-- android:layout_width="match_parent" -->
-            <!-- android:layout_height="wrap_content" -->
-            <!-- android:layout_centerHorizontal="true" -->
-            <!-- android:layout_marginLeft="@dimen/activity_horizontal_margin" -->
-            <!-- android:layout_marginRight="@dimen/activity_horizontal_margin" -->
-            <!-- android:layout_marginTop="@dimen/activity_vertical_margin_reduced" -->
-            <!-- android:background="@drawable/menu_left_devider" /> -->
+        <!-- <ImageView -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_centerHorizontal="true" -->
+        <!-- android:layout_marginLeft="@dimen/activity_horizontal_margin" -->
+        <!-- android:layout_marginRight="@dimen/activity_horizontal_margin" -->
+        <!-- android:layout_marginTop="@dimen/activity_vertical_margin_reduced" -->
+        <!-- android:background="@drawable/menu_left_devider" /> -->
 
-
-            
     </RelativeLayout>
 
 </RelativeLayout>

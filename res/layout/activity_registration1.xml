@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/com.cleanapps.timekeeper.components"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.cleanapps.timekeeper.components.ParallaxImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:tiltSensitivity="2.5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/vertical_margin_increased" >
+
+            <TextView
+                android:id="@+id/activity_registration_ribbon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/vertical_margin"
+                android:background="@drawable/ribbon_bw_new"
+                android:paddingLeft="@dimen/padding_small"
+                android:text="@string/activity_registration_by_cleanapps"
+                android:textSize="@dimen/large_text" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/activity_registration_appname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/horizontal_margin_reduced"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_text" />
+
+        <!-- <com.romainpiel.shimmer.ShimmerTextView -->
+        <!-- android:id="@+id/shimmer_tv" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_gravity="center" -->
+        <!-- android:text="@string/activity_registration_tagline_text" -->
+        <!-- android:textColor="#444" -->
+        <!-- android:textSize="50sp" /> -->
+
+        <TextView
+            android:id="@+id/activity_registration_apptag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_registration_appname"
+            android:layout_marginLeft="@dimen/horizontal_margin_reduced"
+            android:text="@string/activity_registration_tagline_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_text" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@color/white"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="@dimen/vertical_margin_reduced"
+            android:layout_below="@+id/activity_registration_apptag" >
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/activity_registration_sign_in_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/vertical_margin"
+            android:layout_marginLeft="@dimen/horizontal_margin"
+            android:layout_marginRight="@dimen/horizontal_margin"
+            android:background="@drawable/btn_signin_normal" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

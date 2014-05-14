@@ -12,7 +12,6 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.cleanapps.timekeeper.R;
-import com.cleanapps.timekeeper.components.FloatLabelEditText;
 import com.cleanapps.timekeeper.components.ParallaxImageView;
 
 public class ActivityRegistration extends Activity implements OnClickListener {
@@ -31,7 +30,7 @@ public class ActivityRegistration extends Activity implements OnClickListener {
 		this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
 				WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-		setContentView(R.layout.activity_registration);
+		setContentView(R.layout.activity_registration1);
 
 		initView();
 
@@ -44,7 +43,7 @@ public class ActivityRegistration extends Activity implements OnClickListener {
 		mBackground.setForwardTiltOffset(.35f);
 		mBackground.setParallaxIntensity(1.1f);
 		mBackground.setImageDrawable(getResources().getDrawable(
-				R.drawable.splash_bg));
+				R.drawable.registration_bg));
 		mBackground.registerSensorManager();
 
 		this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);

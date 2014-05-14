@@ -9,7 +9,8 @@
 
     <!-- Registration Activity -->
     <string name="activity_registration_hi">HI!</string>
-    <string name="activity_registration_welcome_text">Welcome to the TimeKeeper. Your personal Office-Time manager.</string>
+    <string name="activity_registration_by_cleanapps">by CleanApps</string>
+    <string name="activity_registration_tagline_text">so that you don\'t loose your tracks</string>
     <string name="activity_registration_google_plus">Sign in with Google</string>
     <string name="activity_registration_edit_hint">enter details</string>
     <!-- Main Activity -->
