@@ -27,7 +27,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/vertical_margin"
                 android:background="@drawable/ribbon_bw_new"
-                android:paddingLeft="@dimen/padding_small"
+                android:paddingLeft="@dimen/padding_large"
                 android:text="@string/activity_registration_by_cleanapps"
                 android:textSize="@dimen/large_text" />
         </RelativeLayout>

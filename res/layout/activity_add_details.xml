@@ -1,30 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/com.cleanapps.timekeeper.components"
+    xmlns:floatlabel="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <com.cleanapps.timekeeper.components.FloatLabelEditText
-        android:id="@+id/activity_change_password_old_password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:fitScreenWidth="full"
-        app:hint="@string/activity_registration_edit_hint"
-        app:textColorHintFocused="@color/orange"
-        app:textColorHintUnFocused="@color/grey"
-        app:textSize="16sp" />
-
-    <com.cleanapps.timekeeper.components.FloatLabelEditText
-        android:id="@+id/float_label_text_6"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:fitScreenWidth="full"
-        app:gravity="right"
-        app:hint="Right gravity"
-        app:text="Right gravity hint!"
-        app:textColorHintFocused="@color/green_login"
-        app:textColorHintUnFocused="@android:color/darker_gray"
-        app:textSize="16sp" />
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/padding_small"
+        android:text="@string/activity_add_details_title"
+        android:textSize="@dimen/large_text" />
+
+    <com.cleanapps.timekeeper.components.FloatLabelEditText
+        android:id="@+id/activity_add_details_client_info_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        floatlabel:textColorFloatLabelFocussed="@color/orange"
+        floatlabel:textColorFloatLabelUnFocussed="@color/white"
+        floatlabel:textColorFocussed="@color/black"
+        floatlabel:textColorUnFocussed="@color/green_login"
+        floatlabel:fitScreenWidth="full"
+        floatlabel:hint="@string/activity_add_details_client_hint"
+        floatlabel:textColorHint="@color/red"
+        floatlabel:textSize="16sp" />
+
+    <com.cleanapps.timekeeper.components.FloatLabelEditText
+        android:id="@+id/activity_add_details_work_done_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        floatlabel:textColorFloatLabelFocussed="@color/orange"
+        floatlabel:textColorFloatLabelUnFocussed="@color/white"
+        floatlabel:textColorFocussed="@color/black"
+        floatlabel:textColorUnFocussed="@color/green_login"
+        floatlabel:fitScreenWidth="full"
+        floatlabel:hint="@string/activity_add_details_work_done_hint"
+        floatlabel:textColorHint="@color/red"
+        floatlabel:textSize="16sp" />
+
+    <com.cleanapps.timekeeper.components.FloatLabelEditText
+        android:id="@+id/activity_add_details_remarks_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        floatlabel:textColorFloatLabelFocussed="@color/orange"
+        floatlabel:textColorFloatLabelUnFocussed="@color/white"
+        floatlabel:textColorFocussed="@color/black"
+        floatlabel:textColorUnFocussed="@color/green_login"
+        floatlabel:fitScreenWidth="full"
+        floatlabel:hint="@string/activity_add_details_remarks_hint"
+        floatlabel:textColorHint="@color/red"
+        floatlabel:textSize="16sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/vertical_margin_reduced"
+        android:padding="@dimen/padding_ultra_small"
+        android:text="@string/activity_add_details_save_button" />
 
 </LinearLayout>

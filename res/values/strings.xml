@@ -14,12 +14,8 @@
     <string name="activity_registration_google_plus">Sign in with Google</string>
     <string name="activity_registration_edit_hint">enter details</string>
     <!-- Main Activity -->
-    <string name="fragment_data_input_login_button">Log In</string>
-    <string name="fragment_data_input_client_hint">Client info</string>
-    <string name="fragment_data_input_work_done_hint">Work Details</string>
-    <string name="fragment_data_input_remarks_hint">Remarks</string>
-    <string name="fragment_data_input_save_button">Save Data</string>
-    <string name="fragment_data_input_logout_button">Log Out</string>
+    <string name="activity_add_details_login_button">Log In</string>
+    <string name="activity_add_details_logout_button">Log Out</string>
 
     <!-- Timekeeper Activity -->
     <string name="timekeer_activity_menu_overflow">Expand</string>
@@ -31,14 +27,19 @@
     <string name="fragment_activity_button_logout">Logout</string>
     <string name="fragment_activity_time">00:00:00</string>
     <string name="fragment_activity_add_details">Details</string>
-
-    <!-- About Timekeeper -->
+    <!-- Activity Add Details -->
+    <string name="activity_add_details_client_hint">Client info</string>
+    <string name="activity_add_details_work_done_hint">Work Details</string>
+    <string name="activity_add_details_remarks_hint">Remarks</string>
+    <string name="activity_add_details_save_button">Save</string>
+    <string name="activity_add_details_title">Add Work Details</string>
+ <!-- About Timekeeper -->
     <string name="activity_about_timekeeper_about_text">00:00:00</string>
 
     <!-- Help Timekeepr -->
     <string name="activity_help_timekeeper_some_text">Help</string>
-    
-<!--     Settings Timekeeper -->
-<string name="activity_settings_timekeeper_some_text">Settings</string>
+
+    <!-- Settings Timekeeper -->
+    <string name="activity_settings_timekeeper_some_text">Settings</string>
 
 </resources>

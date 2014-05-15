@@ -14,6 +14,7 @@
     <dimen name="timer_text">80sp</dimen>
     <dimen name="button_textSize">20sp</dimen>
     <dimen name="padding_ultra_small">8dp</dimen>
-    <dimen name="padding_small">32dp</dimen>
+    <dimen name="padding_small">16dp</dimen>
+    <dimen name="padding_large">32dp</dimen>
 
 </resources>

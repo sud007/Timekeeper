@@ -60,16 +60,16 @@ public class MainActivity extends Activity implements OnClickListener {
 	private void initview() {
 		// TODO Auto-generated method stub
 
-		isLoggedIn = TimeKeeperUtilMethods.getLoginStatus(this);
-		mClientInfo = (EditText) findViewById(R.id.fragment_data_input_client_info);
-		mWorkDone = (EditText) findViewById(R.id.fragment_data_input_work_done);
-		mRemarks = (EditText) findViewById(R.id.fragment_data_input_remarks);
-		mLoginButton = (Button) findViewById(R.id.fragment_data_input_login_button);
-		mLoginButton.setOnClickListener(this);
-		mLogoutButton = (Button) findViewById(R.id.fragment_data_input_logout_button);
-		mLogoutButton.setOnClickListener(this);
-		mSaveButton = (Button) findViewById(R.id.fragment_data_input_save_button);
-		mSaveButton.setOnClickListener(this);
+//		isLoggedIn = TimeKeeperUtilMethods.getLoginStatus(this);
+//		mClientInfo = (EditText) findViewById(R.id.fragment_data_input_client_info);
+//		mWorkDone = (EditText) findViewById(R.id.fragment_data_input_work_done);
+//		mRemarks = (EditText) findViewById(R.id.fragment_data_input_remarks);
+//		mLoginButton = (Button) findViewById(R.id.fragment_data_input_login_button);
+//		mLoginButton.setOnClickListener(this);
+//		mLogoutButton = (Button) findViewById(R.id.fragment_data_input_logout_button);
+//		mLogoutButton.setOnClickListener(this);
+//		mSaveButton = (Button) findViewById(R.id.fragment_data_input_save_button);
+//		mSaveButton.setOnClickListener(this);
 
 		if (!isLoggedIn) {
 

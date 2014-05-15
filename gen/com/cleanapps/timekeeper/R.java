@@ -64,14 +64,6 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int adUnitId=0x7f010002;
-        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int backgroundImage=0x7f010025;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -122,7 +114,7 @@ containing a value of this type.
 <tr><td><code>half</code></td><td>2</td><td></td></tr>
 </table>
          */
-        public static final int fitScreenWidth=0x7f010028;
+        public static final int fitScreenWidth=0x7f010020;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -131,6 +123,18 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int forwardTiltOffset=0x7f01001f;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>left</code></td><td>3</td><td></td></tr>
+<tr><td><code>right</code></td><td>5</td><td></td></tr>
+<tr><td><code>center</code></td><td>17</td><td></td></tr>
+</table>
+         */
+        public static final int gravity=0x7f010021;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -138,7 +142,18 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int hint=0x7f010020;
+        public static final int hint=0x7f010022;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>normal</code></td><td>0</td><td></td></tr>
+<tr><td><code>textPassword</code></td><td>1</td><td></td></tr>
+</table>
+         */
+        public static final int inputType=0x7f010023;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -274,7 +289,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int text=0x7f010021;
+        public static final int text=0x7f010024;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -283,7 +298,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int textColor=0x7f010023;
+        public static final int textColorFloatLabelFocussed=0x7f010029;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -292,7 +307,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int textColorHintFocused=0x7f010026;
+        public static final int textColorFloatLabelUnFocussed=0x7f01002a;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -301,7 +316,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int textColorHintUnFocused=0x7f010027;
+        public static final int textColorFocussed=0x7f010027;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -310,7 +325,16 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int textHintColor=0x7f010024;
+        public static final int textColorHint=0x7f010026;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int textColorUnFocussed=0x7f010028;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -320,7 +344,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int textSize=0x7f010022;
+        public static final int textSize=0x7f010025;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -447,6 +471,7 @@ containing a value of this type.
         public static final int horizontal_margin_reduced=0x7f090004;
         public static final int large_text=0x7f090008;
         public static final int margin_big=0x7f090005;
+        public static final int padding_large=0x7f09000e;
         public static final int padding_small=0x7f09000d;
         public static final int padding_ultra_small=0x7f09000c;
         public static final int small_text=0x7f090009;
@@ -521,43 +546,50 @@ containing a value of this type.
         public static final int toggle_light_blue=0x7f02003c;
     }
     public static final class id {
-        public static final int activity_change_password_old_password=0x7f060007;
-        public static final int activity_registration_appname=0x7f06000e;
-        public static final int activity_registration_apptag=0x7f06000f;
-        public static final int activity_registration_hi_text=0x7f06000b;
-        public static final int activity_registration_ribbon=0x7f06000d;
-        public static final int activity_registration_sign_in_button=0x7f06000c;
-        public static final int activity_splashanim_title_text=0x7f060011;
-        public static final int activity_timekeeper_main_about=0x7f060024;
-        public static final int activity_timekeeper_main_help=0x7f060023;
-        public static final int activity_timekeeper_main_more=0x7f060021;
-        public static final int activity_timekeeper_main_settings=0x7f060022;
-        public static final int activity_timer_screen_tabs=0x7f06001f;
-        public static final int activity_timer_screen_viewpager=0x7f060020;
-        public static final int background=0x7f06000a;
-        public static final int btn_sign_in=0x7f060010;
-        public static final int container=0x7f060009;
-        public static final int custom_comp_floating_label_edit_text=0x7f06001a;
-        public static final int custom_comp_floating_label_hint=0x7f060019;
-        public static final int float_label_text_6=0x7f060008;
-        public static final int fragment_data_bottom_container=0x7f060016;
-        public static final int fragment_data_input_client_info=0x7f060013;
-        public static final int fragment_data_input_login_button=0x7f060012;
-        public static final int fragment_data_input_logout_button=0x7f060018;
-        public static final int fragment_data_input_remarks=0x7f060015;
-        public static final int fragment_data_input_save_button=0x7f060017;
-        public static final int fragment_data_input_work_done=0x7f060014;
-        public static final int fragment_timer_screen_add_details_btn=0x7f06001b;
-        public static final int fragment_timer_screen_add_details_image=0x7f06001c;
-        public static final int fragment_timer_screen_login_btn=0x7f06001d;
-        public static final int fragment_timer_screen_login_time=0x7f06001e;
+        public static final int activity_add_details_client_info_et=0x7f06000d;
+        public static final int activity_add_details_remarks_et=0x7f06000f;
+        public static final int activity_add_details_work_done_et=0x7f06000e;
+        public static final int activity_change_password_old_password=0x7f06000b;
+        public static final int activity_registration_appname=0x7f060015;
+        public static final int activity_registration_apptag=0x7f060016;
+        public static final int activity_registration_hi_text=0x7f060012;
+        public static final int activity_registration_ribbon=0x7f060014;
+        public static final int activity_registration_sign_in_button=0x7f060013;
+        public static final int activity_splashanim_title_text=0x7f060018;
+        public static final int activity_timekeeper_main_about=0x7f06002b;
+        public static final int activity_timekeeper_main_help=0x7f06002a;
+        public static final int activity_timekeeper_main_more=0x7f060028;
+        public static final int activity_timekeeper_main_settings=0x7f060029;
+        public static final int activity_timer_screen_tabs=0x7f060024;
+        public static final int activity_timer_screen_viewpager=0x7f060025;
+        public static final int background=0x7f060011;
+        public static final int btn_sign_in=0x7f060017;
+        public static final int center=0x7f060009;
+        public static final int container=0x7f060010;
+        public static final int float_label_text_6=0x7f06000c;
+        public static final int floating_label_edit_text=0x7f060027;
+        public static final int floating_label_hint=0x7f060026;
+        public static final int fragment_data_bottom_container=0x7f06001d;
+        public static final int fragment_data_input_client_info=0x7f06001a;
+        public static final int fragment_data_input_login_button=0x7f060019;
+        public static final int fragment_data_input_logout_button=0x7f06001f;
+        public static final int fragment_data_input_remarks=0x7f06001c;
+        public static final int fragment_data_input_save_button=0x7f06001e;
+        public static final int fragment_data_input_work_done=0x7f06001b;
+        public static final int fragment_timer_screen_add_details_btn=0x7f060020;
+        public static final int fragment_timer_screen_add_details_image=0x7f060021;
+        public static final int fragment_timer_screen_login_btn=0x7f060022;
+        public static final int fragment_timer_screen_login_time=0x7f060023;
         public static final int full=0x7f060005;
         public static final int half=0x7f060006;
         public static final int hybrid=0x7f060004;
+        public static final int left=0x7f060007;
         public static final int none=0x7f060000;
         public static final int normal=0x7f060001;
+        public static final int right=0x7f060008;
         public static final int satellite=0x7f060002;
         public static final int terrain=0x7f060003;
+        public static final int textPassword=0x7f06000a;
     }
     public static final class integer {
         public static final int google_play_services_version=0x7f080000;
@@ -571,14 +603,14 @@ containing a value of this type.
         public static final int activity_sequential_animation=0x7f030005;
         public static final int activity_splash=0x7f030006;
         public static final int data_input=0x7f030007;
-        public static final int floatlabel_edittext=0x7f030008;
-        public static final int fragment_activity_main=0x7f030009;
-        public static final int fragment_graphs_screen=0x7f03000a;
-        public static final int fragment_monitor_screen=0x7f03000b;
-        public static final int fragment_timer_screen=0x7f03000c;
-        public static final int help_timekeeper=0x7f03000d;
-        public static final int settings_timekeeper=0x7f03000e;
-        public static final int timer_screen=0x7f03000f;
+        public static final int fragment_activity_main=0x7f030008;
+        public static final int fragment_graphs_screen=0x7f030009;
+        public static final int fragment_monitor_screen=0x7f03000a;
+        public static final int fragment_timer_screen=0x7f03000b;
+        public static final int help_timekeeper=0x7f03000c;
+        public static final int settings_timekeeper=0x7f03000d;
+        public static final int timer_screen=0x7f03000e;
+        public static final int weddingparty_floatlabel_edittext=0x7f03000f;
     }
     public static final class menu {
         public static final int main=0x7f0b0000;
@@ -587,10 +619,21 @@ containing a value of this type.
         public static final int action_settings=0x7f07001d;
         /**  About Timekeeper 
          */
-        public static final int activity_about_timekeeper_about_text=0x7f070032;
+        public static final int activity_about_timekeeper_about_text=0x7f070033;
+        /**  Activity Add Details 
+         */
+        public static final int activity_add_details_client_hint=0x7f07002e;
+        /**  Main Activity 
+         */
+        public static final int activity_add_details_login_button=0x7f070024;
+        public static final int activity_add_details_logout_button=0x7f070025;
+        public static final int activity_add_details_remarks_hint=0x7f070030;
+        public static final int activity_add_details_save_button=0x7f070031;
+        public static final int activity_add_details_title=0x7f070032;
+        public static final int activity_add_details_work_done_hint=0x7f07002f;
         /**  Help Timekeepr 
          */
-        public static final int activity_help_timekeeper_some_text=0x7f070033;
+        public static final int activity_help_timekeeper_some_text=0x7f070034;
         public static final int activity_registration_by_cleanapps=0x7f070020;
         public static final int activity_registration_edit_hint=0x7f070023;
         public static final int activity_registration_google_plus=0x7f070022;
@@ -598,9 +641,9 @@ containing a value of this type.
          */
         public static final int activity_registration_hi=0x7f07001f;
         public static final int activity_registration_tagline_text=0x7f070021;
-        /**      Settings Timekeeper 
+        /**  Settings Timekeeper 
          */
-        public static final int activity_settings_timekeeper_some_text=0x7f070034;
+        public static final int activity_settings_timekeeper_some_text=0x7f070035;
         /**  Splash animation activity 
          */
         public static final int activity_splashanim_timeKeeper=0x7f07001e;
@@ -699,30 +742,22 @@ containing a value of this type.
         /**  Long form sign-in button text [CHAR LIMIT=30] 
          */
         public static final int common_signin_button_text_long=0x7f070013;
-        public static final int fragment_activity_add_details=0x7f070031;
+        public static final int fragment_activity_add_details=0x7f07002d;
         /**  Fragment Activity 
          */
-        public static final int fragment_activity_button_login=0x7f07002e;
-        public static final int fragment_activity_button_logout=0x7f07002f;
-        public static final int fragment_activity_time=0x7f070030;
-        public static final int fragment_data_input_client_hint=0x7f070025;
-        /**  Main Activity 
-         */
-        public static final int fragment_data_input_login_button=0x7f070024;
-        public static final int fragment_data_input_logout_button=0x7f070029;
-        public static final int fragment_data_input_remarks_hint=0x7f070027;
-        public static final int fragment_data_input_save_button=0x7f070028;
-        public static final int fragment_data_input_work_done_hint=0x7f070026;
+        public static final int fragment_activity_button_login=0x7f07002a;
+        public static final int fragment_activity_button_logout=0x7f07002b;
+        public static final int fragment_activity_time=0x7f07002c;
         public static final int hello_world=0x7f07001c;
         /**  Location client code resources (prefix with location_client) 
          */
         public static final int location_client_powered_by_google=0x7f07001a;
-        public static final int timekeer_activity_menu_about=0x7f07002d;
-        public static final int timekeer_activity_menu_help=0x7f07002c;
+        public static final int timekeer_activity_menu_about=0x7f070029;
+        public static final int timekeer_activity_menu_help=0x7f070028;
         /**  Timekeeper Activity 
          */
-        public static final int timekeer_activity_menu_overflow=0x7f07002a;
-        public static final int timekeer_activity_menu_settings=0x7f07002b;
+        public static final int timekeer_activity_menu_overflow=0x7f070026;
+        public static final int timekeer_activity_menu_settings=0x7f070027;
     }
     public static final class style {
         /** 
@@ -841,45 +876,35 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #FloatLabelEditText_backgroundImage com.cleanapps.timekeeper:backgroundImage}</code></td><td></td></tr>
            <tr><td><code>{@link #FloatLabelEditText_fitScreenWidth com.cleanapps.timekeeper:fitScreenWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatLabelEditText_gravity com.cleanapps.timekeeper:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #FloatLabelEditText_hint com.cleanapps.timekeeper:hint}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatLabelEditText_inputType com.cleanapps.timekeeper:inputType}</code></td><td></td></tr>
            <tr><td><code>{@link #FloatLabelEditText_text com.cleanapps.timekeeper:text}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatLabelEditText_textColor com.cleanapps.timekeeper:textColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatLabelEditText_textColorHintFocused com.cleanapps.timekeeper:textColorHintFocused}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatLabelEditText_textColorHintUnFocused com.cleanapps.timekeeper:textColorHintUnFocused}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatLabelEditText_textHintColor com.cleanapps.timekeeper:textHintColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatLabelEditText_textColorFloatLabelFocussed com.cleanapps.timekeeper:textColorFloatLabelFocussed}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatLabelEditText_textColorFloatLabelUnFocussed com.cleanapps.timekeeper:textColorFloatLabelUnFocussed}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatLabelEditText_textColorFocussed com.cleanapps.timekeeper:textColorFocussed}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatLabelEditText_textColorHint com.cleanapps.timekeeper:textColorHint}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatLabelEditText_textColorUnFocussed com.cleanapps.timekeeper:textColorUnFocussed}</code></td><td></td></tr>
            <tr><td><code>{@link #FloatLabelEditText_textSize com.cleanapps.timekeeper:textSize}</code></td><td></td></tr>
            </table>
-           @see #FloatLabelEditText_backgroundImage
            @see #FloatLabelEditText_fitScreenWidth
+           @see #FloatLabelEditText_gravity
            @see #FloatLabelEditText_hint
+           @see #FloatLabelEditText_inputType
            @see #FloatLabelEditText_text
-           @see #FloatLabelEditText_textColor
-           @see #FloatLabelEditText_textColorHintFocused
-           @see #FloatLabelEditText_textColorHintUnFocused
-           @see #FloatLabelEditText_textHintColor
+           @see #FloatLabelEditText_textColorFloatLabelFocussed
+           @see #FloatLabelEditText_textColorFloatLabelUnFocussed
+           @see #FloatLabelEditText_textColorFocussed
+           @see #FloatLabelEditText_textColorHint
+           @see #FloatLabelEditText_textColorUnFocussed
            @see #FloatLabelEditText_textSize
          */
         public static final int[] FloatLabelEditText = {
             0x7f010020, 0x7f010021, 0x7f010022, 0x7f010023,
             0x7f010024, 0x7f010025, 0x7f010026, 0x7f010027,
-            0x7f010028
+            0x7f010028, 0x7f010029, 0x7f01002a
         };
-        /**
-          <p>This symbol is the offset where the {@link com.cleanapps.timekeeper.R.attr#backgroundImage}
-          attribute's value can be found in the {@link #FloatLabelEditText} array.
-
-
-          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name com.cleanapps.timekeeper:backgroundImage
-        */
-        public static final int FloatLabelEditText_backgroundImage = 5;
         /**
           <p>This symbol is the offset where the {@link com.cleanapps.timekeeper.R.attr#fitScreenWidth}
           attribute's value can be found in the {@link #FloatLabelEditText} array.
@@ -896,7 +921,25 @@ containing a value of this type.
 </table>
           @attr name com.cleanapps.timekeeper:fitScreenWidth
         */
-        public static final int FloatLabelEditText_fitScreenWidth = 8;
+        public static final int FloatLabelEditText_fitScreenWidth = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.cleanapps.timekeeper.R.attr#gravity}
+          attribute's value can be found in the {@link #FloatLabelEditText} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>left</code></td><td>3</td><td></td></tr>
+<tr><td><code>right</code></td><td>5</td><td></td></tr>
+<tr><td><code>center</code></td><td>17</td><td></td></tr>
+</table>
+          @attr name com.cleanapps.timekeeper:gravity
+        */
+        public static final int FloatLabelEditText_gravity = 1;
         /**
           <p>This symbol is the offset where the {@link com.cleanapps.timekeeper.R.attr#hint}
           attribute's value can be found in the {@link #FloatLabelEditText} array.
@@ -910,7 +953,24 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.cleanapps.timekeeper:hint
         */
-        public static final int FloatLabelEditText_hint = 0;
+        public static final int FloatLabelEditText_hint = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.cleanapps.timekeeper.R.attr#inputType}
+          attribute's value can be found in the {@link #FloatLabelEditText} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>normal</code></td><td>0</td><td></td></tr>
+<tr><td><code>textPassword</code></td><td>1</td><td></td></tr>
+</table>
+          @attr name com.cleanapps.timekeeper:inputType
+        */
+        public static final int FloatLabelEditText_inputType = 3;
         /**
           <p>This symbol is the offset where the {@link com.cleanapps.timekeeper.R.attr#text}
           attribute's value can be found in the {@link #FloatLabelEditText} array.
@@ -924,9 +984,9 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.cleanapps.timekeeper:text
         */
-        public static final int FloatLabelEditText_text = 1;
+        public static final int FloatLabelEditText_text = 4;
         /**
-          <p>This symbol is the offset where the {@link com.cleanapps.timekeeper.R.attr#textColor}
+          <p>This symbol is the offset where the {@link com.cleanapps.timekeeper.R.attr#textColorFloatLabelFocussed}
           attribute's value can be found in the {@link #FloatLabelEditText} array.
 
 
@@ -937,11 +997,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.cleanapps.timekeeper:textColor
+          @attr name com.cleanapps.timekeeper:textColorFloatLabelFocussed
         */
-        public static final int FloatLabelEditText_textColor = 3;
+        public static final int FloatLabelEditText_textColorFloatLabelFocussed = 9;
         /**
-          <p>This symbol is the offset where the {@link com.cleanapps.timekeeper.R.attr#textColorHintFocused}
+          <p>This symbol is the offset where the {@link com.cleanapps.timekeeper.R.attr#textColorFloatLabelUnFocussed}
           attribute's value can be found in the {@link #FloatLabelEditText} array.
 
 
@@ -952,11 +1012,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.cleanapps.timekeeper:textColorHintFocused
+          @attr name com.cleanapps.timekeeper:textColorFloatLabelUnFocussed
         */
-        public static final int FloatLabelEditText_textColorHintFocused = 6;
+        public static final int FloatLabelEditText_textColorFloatLabelUnFocussed = 10;
         /**
-          <p>This symbol is the offset where the {@link com.cleanapps.timekeeper.R.attr#textColorHintUnFocused}
+          <p>This symbol is the offset where the {@link com.cleanapps.timekeeper.R.attr#textColorFocussed}
           attribute's value can be found in the {@link #FloatLabelEditText} array.
 
 
@@ -967,11 +1027,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.cleanapps.timekeeper:textColorHintUnFocused
+          @attr name com.cleanapps.timekeeper:textColorFocussed
         */
-        public static final int FloatLabelEditText_textColorHintUnFocused = 7;
+        public static final int FloatLabelEditText_textColorFocussed = 7;
         /**
-          <p>This symbol is the offset where the {@link com.cleanapps.timekeeper.R.attr#textHintColor}
+          <p>This symbol is the offset where the {@link com.cleanapps.timekeeper.R.attr#textColorHint}
           attribute's value can be found in the {@link #FloatLabelEditText} array.
 
 
@@ -982,9 +1042,24 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.cleanapps.timekeeper:textHintColor
+          @attr name com.cleanapps.timekeeper:textColorHint
         */
-        public static final int FloatLabelEditText_textHintColor = 4;
+        public static final int FloatLabelEditText_textColorHint = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.cleanapps.timekeeper.R.attr#textColorUnFocussed}
+          attribute's value can be found in the {@link #FloatLabelEditText} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.cleanapps.timekeeper:textColorUnFocussed
+        */
+        public static final int FloatLabelEditText_textColorUnFocussed = 8;
         /**
           <p>This symbol is the offset where the {@link com.cleanapps.timekeeper.R.attr#textSize}
           attribute's value can be found in the {@link #FloatLabelEditText} array.
@@ -1000,7 +1075,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.cleanapps.timekeeper:textSize
         */
-        public static final int FloatLabelEditText_textSize = 2;
+        public static final int FloatLabelEditText_textSize = 5;
         /** Attributes that can be used with a MapAttrs.
            <p>Includes the following attributes:</p>
            <table>
