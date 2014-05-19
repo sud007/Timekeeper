@@ -25,7 +25,7 @@ import android.widget.EditText;
 import android.widget.Switch;
 import android.widget.Toast;
 
-import com.cleanapps.model.MainListData;
+import com.cleanapps.model.TimeSheetData;
 import com.cleanapps.timekeeper.dbhelper.LoginDBHelper;
 import com.cleanapps.util.TimeKeeperConstants;
 import com.cleanapps.util.TimeKeeperUtilMethods;
@@ -167,21 +167,21 @@ public class MainActivity extends Activity implements OnClickListener {
 	private void getTableData() {
 		// TODO Auto-generated method stub
 		
-		ArrayList <MainListData> list= new ArrayList<MainListData>();
+		ArrayList <TimeSheetData> list= new ArrayList<TimeSheetData>();
 		 Cursor c1 = db.getAllData();
 		 //calling
 		
 		  if (c1 != null && c1.getCount() != 0) {
 		   if (c1.moveToFirst()) {
 		    do {
-		     MainListData listdata = new MainListData();
+		     TimeSheetData listdata = new TimeSheetData();
 		     listdata.setmDate(c1.getString(c1.getColumnIndex("Date")));
 		     listdata.setmDay(c1.getString(c1.getColumnIndex("Day")));
 		     listdata.setmTimeIn(c1.getString(c1.getColumnIndex(LoginDBHelper.COLUMN_TIME_IN)));
 		     listdata.setmTimeOut(c1.getString(c1.getColumnIndex(db.COLUMN_TIME_OUT)));
 		     listdata.setmHours(c1.getString(c1.getColumnIndex(db.COLUMN_TOTAL_HOURS)));
 		     listdata.setmClientInfo(c1.getString(c1.getColumnIndex(db.COLUMN_CLIENT)));
-		     listdata.setmLocation(c1.getString(c1.getColumnIndex(db.COLUMN_lOCATION)));
+		     listdata.setmLocation(c1.getString(c1.getColumnIndex(db.COLUMN_LOCATION)));
 		     listdata.setmWorkDone(c1.getString(c1.getColumnIndex(db.COLUMN_WORK_DONE)));
 		     listdata.setmRemarks(c1.getString(c1.getColumnIndex(db.COLUMN_REMARKS)));
 		     
@@ -286,7 +286,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		try {
 
 			Log.v(tag, "" + clientInfoString + " " + workDoneString + remarksString);
-			 db.updateData(new MainListData("", "", "", "", "",
+			 db.updateData(new TimeSheetData("", "", "", "", "",
 			  clientInfoString, "", workDoneString, remarksString),TimeKeeperUtilMethods.getLoginDate(this));
 
 		} catch (Exception e) {

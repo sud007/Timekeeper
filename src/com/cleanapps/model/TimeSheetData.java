@@ -1,11 +1,11 @@
 package com.cleanapps.model;
 
-public class MainListData {
-	public MainListData() {
+public class TimeSheetData {
+	public TimeSheetData() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public MainListData(String mDate, String mDay, String mTimeIn,
+	public TimeSheetData(String mDate, String mDay, String mTimeIn,
 			String mTimeOut, String mHours, String mClientInfo,
 			String mLocation, String mWorkDone, String mRemarks) {
 		super();
