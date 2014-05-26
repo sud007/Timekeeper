@@ -46,12 +46,12 @@ public final class R {
 		public static final int calendar_bg_selector = 0x7f020008;
 	}
 	public static final class id {
-		public static final int calendar_grid = 0x7f090040;
-		public static final int title = 0x7f09003f;
+		public static final int calendar_grid = 0x7f09003f;
+		public static final int title = 0x7f09003e;
 	}
 	public static final class layout {
-		public static final int month = 0x7f03000e;
-		public static final int week = 0x7f030012;
+		public static final int month = 0x7f03000f;
+		public static final int week = 0x7f030013;
 	}
 	public static final class string {
 		public static final int day_name_format = 0x7f070000;

@@ -29,5 +29,8 @@
         <attr name="textColorFloatLabelFocussed" format="color" />
         <attr name="textColorFloatLabelUnFocussed" format="color" />
     </declare-styleable>
+    <declare-styleable name="FontTextView">
+        <attr name="setFontFromAssets" format="string" />
+    </declare-styleable>
 
 </resources>

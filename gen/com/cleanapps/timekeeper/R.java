@@ -455,6 +455,14 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int pstsUnderlineHeight=0x7f010030;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int setFontFromAssets=0x7f010045;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -839,58 +847,57 @@ containing a value of this type.
         public static final int toggle_light_blue=0x7f020041;
     }
     public static final class id {
-        public static final int activity_add_details_client_info_et=0x7f09001c;
-        public static final int activity_add_details_remarks_et=0x7f09001e;
-        public static final int activity_add_details_work_done_et=0x7f09001d;
-        public static final int activity_change_password_old_password=0x7f09001a;
-        public static final int activity_registration_appname=0x7f090024;
-        public static final int activity_registration_apptag=0x7f090025;
-        public static final int activity_registration_hi_text=0x7f090021;
-        public static final int activity_registration_ribbon=0x7f090023;
-        public static final int activity_registration_sign_in_button=0x7f090022;
-        public static final int activity_splashanim_title_text=0x7f090027;
-        public static final int activity_timekeeper_main_about=0x7f090048;
-        public static final int activity_timekeeper_main_help=0x7f090047;
-        public static final int activity_timekeeper_main_more=0x7f090045;
-        public static final int activity_timekeeper_main_settings=0x7f090046;
-        public static final int activity_timer_screen_tabs=0x7f090041;
-        public static final int activity_timer_screen_viewpager=0x7f090042;
-        public static final int background=0x7f090020;
+        public static final int activity_add_details_client_info_et=0x7f09001a;
+        public static final int activity_add_details_remarks_et=0x7f09001c;
+        public static final int activity_add_details_work_done_et=0x7f09001b;
+        public static final int activity_registration_appname=0x7f090022;
+        public static final int activity_registration_apptag=0x7f090023;
+        public static final int activity_registration_hi_text=0x7f09001f;
+        public static final int activity_registration_ribbon=0x7f090021;
+        public static final int activity_registration_sign_in_button=0x7f090020;
+        public static final int activity_splashanim_title_text=0x7f090025;
+        public static final int activity_timekeeper_main_about=0x7f090047;
+        public static final int activity_timekeeper_main_help=0x7f090046;
+        public static final int activity_timekeeper_main_more=0x7f090044;
+        public static final int activity_timekeeper_main_settings=0x7f090045;
+        public static final int activity_timer_screen_tabs=0x7f090040;
+        public static final int activity_timer_screen_viewpager=0x7f090041;
+        public static final int background=0x7f09001e;
         public static final int book_now=0x7f090010;
-        public static final int btn_sign_in=0x7f090026;
+        public static final int btn_sign_in=0x7f090024;
         public static final int buyButton=0x7f09000a;
         public static final int buy_now=0x7f09000f;
         public static final int buy_with_google=0x7f09000e;
-        public static final int calendar_grid=0x7f090040;
-        public static final int calendar_view=0x7f090028;
+        public static final int calendar_grid=0x7f09003f;
+        public static final int calendar_view=0x7f090026;
         public static final int center=0x7f090018;
         public static final int classic=0x7f090011;
-        public static final int container=0x7f09001f;
-        public static final int float_label_text_6=0x7f09001b;
-        public static final int floating_label_edit_text=0x7f090044;
-        public static final int floating_label_hint=0x7f090043;
-        public static final int fragment_data_bottom_container=0x7f09002d;
-        public static final int fragment_data_input_client_info=0x7f09002a;
-        public static final int fragment_data_input_login_button=0x7f090029;
-        public static final int fragment_data_input_logout_button=0x7f09002f;
-        public static final int fragment_data_input_remarks=0x7f09002c;
-        public static final int fragment_data_input_save_button=0x7f09002e;
-        public static final int fragment_data_input_work_done=0x7f09002b;
-        public static final int fragment_monitor_screen_calender_button=0x7f090032;
-        public static final int fragment_monitor_screen_calnder_container=0x7f090030;
-        public static final int fragment_monitor_screen_calnder_text=0x7f090031;
-        public static final int fragment_monitor_screen_client_info_et=0x7f090038;
-        public static final int fragment_monitor_screen_data_container=0x7f090034;
-        public static final int fragment_monitor_screen_empty_container=0x7f090033;
-        public static final int fragment_monitor_screen_hours_worked=0x7f090037;
-        public static final int fragment_monitor_screen_login_time=0x7f090035;
-        public static final int fragment_monitor_screen_logout_time=0x7f090036;
-        public static final int fragment_monitor_screen_remarks_et=0x7f09003a;
-        public static final int fragment_monitor_screen_work_done_et=0x7f090039;
-        public static final int fragment_timer_screen_add_details_btn=0x7f09003b;
-        public static final int fragment_timer_screen_add_details_image=0x7f09003c;
-        public static final int fragment_timer_screen_login_btn=0x7f09003d;
-        public static final int fragment_timer_screen_login_time=0x7f09003e;
+        public static final int container=0x7f09001d;
+        public static final int floating_label_edit_text=0x7f090043;
+        public static final int floating_label_hint=0x7f090042;
+        public static final int fonttextview=0x7f09002e;
+        public static final int fragment_data_bottom_container=0x7f09002b;
+        public static final int fragment_data_input_client_info=0x7f090028;
+        public static final int fragment_data_input_login_button=0x7f090027;
+        public static final int fragment_data_input_logout_button=0x7f09002d;
+        public static final int fragment_data_input_remarks=0x7f09002a;
+        public static final int fragment_data_input_save_button=0x7f09002c;
+        public static final int fragment_data_input_work_done=0x7f090029;
+        public static final int fragment_monitor_screen_calender_button=0x7f090031;
+        public static final int fragment_monitor_screen_calnder_container=0x7f09002f;
+        public static final int fragment_monitor_screen_calnder_text=0x7f090030;
+        public static final int fragment_monitor_screen_client_info_et=0x7f090037;
+        public static final int fragment_monitor_screen_data_container=0x7f090033;
+        public static final int fragment_monitor_screen_empty_container=0x7f090032;
+        public static final int fragment_monitor_screen_hours_worked=0x7f090036;
+        public static final int fragment_monitor_screen_login_time=0x7f090034;
+        public static final int fragment_monitor_screen_logout_time=0x7f090035;
+        public static final int fragment_monitor_screen_remarks_et=0x7f090039;
+        public static final int fragment_monitor_screen_work_done_et=0x7f090038;
+        public static final int fragment_timer_screen_add_details_btn=0x7f09003a;
+        public static final int fragment_timer_screen_add_details_image=0x7f09003b;
+        public static final int fragment_timer_screen_login_btn=0x7f09003c;
+        public static final int fragment_timer_screen_login_time=0x7f09003d;
         public static final int full=0x7f090014;
         public static final int grayscale=0x7f090012;
         public static final int half=0x7f090015;
@@ -910,7 +917,7 @@ containing a value of this type.
         public static final int strict_sandbox=0x7f090009;
         public static final int terrain=0x7f090003;
         public static final int textPassword=0x7f090019;
-        public static final int title=0x7f09003f;
+        public static final int title=0x7f09003e;
         public static final int wrap_content=0x7f09000d;
     }
     public static final class integer {
@@ -926,16 +933,17 @@ containing a value of this type.
         public static final int activity_splash=0x7f030006;
         public static final int calender_picker_dialog=0x7f030007;
         public static final int data_input=0x7f030008;
-        public static final int fragment_activity_main=0x7f030009;
-        public static final int fragment_graphs_screen=0x7f03000a;
-        public static final int fragment_monitor_screen=0x7f03000b;
-        public static final int fragment_timer_screen=0x7f03000c;
-        public static final int help_timekeeper=0x7f03000d;
-        public static final int month=0x7f03000e;
-        public static final int settings_timekeeper=0x7f03000f;
-        public static final int timer_screen=0x7f030010;
-        public static final int weddingparty_floatlabel_edittext=0x7f030011;
-        public static final int week=0x7f030012;
+        public static final int font_text_view=0x7f030009;
+        public static final int fragment_activity_main=0x7f03000a;
+        public static final int fragment_graphs_screen=0x7f03000b;
+        public static final int fragment_monitor_screen=0x7f03000c;
+        public static final int fragment_timer_screen=0x7f03000d;
+        public static final int help_timekeeper=0x7f03000e;
+        public static final int month=0x7f03000f;
+        public static final int settings_timekeeper=0x7f030010;
+        public static final int timer_screen=0x7f030011;
+        public static final int weddingparty_floatlabel_edittext=0x7f030012;
+        public static final int week=0x7f030013;
     }
     public static final class menu {
         public static final int main=0x7f0b0000;
@@ -1527,6 +1535,33 @@ containing a value of this type.
           @attr name com.cleanapps.timekeeper:textSize
         */
         public static final int FloatLabelEditText_textSize = 5;
+        /** Attributes that can be used with a FontTextView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #FontTextView_setFontFromAssets com.cleanapps.timekeeper:setFontFromAssets}</code></td><td></td></tr>
+           </table>
+           @see #FontTextView_setFontFromAssets
+         */
+        public static final int[] FontTextView = {
+            0x7f010045
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.cleanapps.timekeeper.R.attr#setFontFromAssets}
+          attribute's value can be found in the {@link #FontTextView} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.cleanapps.timekeeper:setFontFromAssets
+        */
+        public static final int FontTextView_setFontFromAssets = 0;
         /** Attributes that can be used with a MapAttrs.
            <p>Includes the following attributes:</p>
            <table>
