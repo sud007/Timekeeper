@@ -1,8 +1,157 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:floatlabel="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/orange" >
-    
+    android:background="@color/CCC" >
+
+    <LinearLayout
+        android:id="@+id/fragment_monitor_screen_calnder_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/design"
+        android:orientation="horizontal"
+        android:padding="6dp"
+        android:weightSum="10" >
+
+        <TextView
+            android:id="@+id/fragment_monitor_screen_calnder_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="7"
+            android:background="@drawable/calender_picker_click_effect"
+            android:padding="10dp"
+            android:text="@string/fragment_monitor_screen_select_date"
+            android:textSize="@dimen/button_textSize" />
+
+        <Button
+            android:id="@+id/fragment_monitor_screen_calender_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20dp"
+            android:layout_weight="3"
+            android:text="@string/fragment_monitor_screen_find_button" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fragment_monitor_screen_empty_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/calendar_xxl2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/fragment_monitor_screen_forget_text" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_monitor_screen_calnder_container" >
+
+        <LinearLayout
+            android:id="@+id/fragment_monitor_screen_data_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <com.cleanapps.timekeeper.components.FloatLabelEditText
+                android:id="@+id/fragment_monitor_screen_login_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                floatlabel:fitScreenWidth="full"
+                floatlabel:hint="@string/fragment_monitor_screen_login_time"
+                floatlabel:textColorFloatLabelFocussed="@color/orange"
+                floatlabel:textColorFloatLabelUnFocussed="@color/white"
+                floatlabel:textColorFocussed="@color/black"
+                floatlabel:textColorHint="@color/red"
+                floatlabel:textColorUnFocussed="@color/green_login"
+                floatlabel:textSize="16sp" />
+
+            <com.cleanapps.timekeeper.components.FloatLabelEditText
+                android:id="@+id/fragment_monitor_screen_logout_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                floatlabel:fitScreenWidth="full"
+                floatlabel:hint="@string/fragment_monitor_screen_logout_time"
+                floatlabel:textColorFloatLabelFocussed="@color/orange"
+                floatlabel:textColorFloatLabelUnFocussed="@color/white"
+                floatlabel:textColorFocussed="@color/black"
+                floatlabel:textColorHint="@color/red"
+                floatlabel:textColorUnFocussed="@color/green_login"
+                floatlabel:textSize="16sp" />
+
+            <com.cleanapps.timekeeper.components.FloatLabelEditText
+                android:id="@+id/fragment_monitor_screen_hours_worked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                floatlabel:fitScreenWidth="full"
+                floatlabel:hint="@string/fragment_monitor_screen_hours_worked"
+                floatlabel:textColorFloatLabelFocussed="@color/orange"
+                floatlabel:textColorFloatLabelUnFocussed="@color/white"
+                floatlabel:textColorFocussed="@color/black"
+                floatlabel:textColorHint="@color/red"
+                floatlabel:textColorUnFocussed="@color/green_login"
+                floatlabel:textSize="16sp" />
+
+            <com.cleanapps.timekeeper.components.FloatLabelEditText
+                android:id="@+id/fragment_monitor_screen_client_info_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                floatlabel:fitScreenWidth="full"
+                floatlabel:hint="@string/activity_add_details_client_hint"
+                floatlabel:textColorFloatLabelFocussed="@color/orange"
+                floatlabel:textColorFloatLabelUnFocussed="@color/white"
+                floatlabel:textColorFocussed="@color/black"
+                floatlabel:textColorHint="@color/red"
+                floatlabel:textColorUnFocussed="@color/green_login"
+                floatlabel:textSize="16sp" />
+
+            <com.cleanapps.timekeeper.components.FloatLabelEditText
+                android:id="@+id/fragment_monitor_screen_work_done_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                floatlabel:fitScreenWidth="full"
+                floatlabel:hint="@string/activity_add_details_work_done_hint"
+                floatlabel:textColorFloatLabelFocussed="@color/orange"
+                floatlabel:textColorFloatLabelUnFocussed="@color/white"
+                floatlabel:textColorFocussed="@color/black"
+                floatlabel:textColorHint="@color/red"
+                floatlabel:textColorUnFocussed="@color/green_login"
+                floatlabel:textSize="16sp" />
+
+            <com.cleanapps.timekeeper.components.FloatLabelEditText
+                android:id="@+id/fragment_monitor_screen_remarks_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                floatlabel:fitScreenWidth="full"
+                floatlabel:hint="@string/activity_add_details_remarks_hint"
+                floatlabel:textColorFloatLabelFocussed="@color/orange"
+                floatlabel:textColorFloatLabelUnFocussed="@color/white"
+                floatlabel:textColorFocussed="@color/black"
+                floatlabel:textColorHint="@color/red"
+                floatlabel:textColorUnFocussed="@color/green_login"
+                floatlabel:textSize="16sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_add_details_save_button"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+    </ScrollView>
 
 </RelativeLayout>

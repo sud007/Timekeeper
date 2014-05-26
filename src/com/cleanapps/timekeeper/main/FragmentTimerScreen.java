@@ -50,6 +50,7 @@ public class FragmentTimerScreen extends Fragment {
 				.findViewById(R.id.fragment_timer_screen_login_time);
 		rel = (RelativeLayout) view
 				.findViewById(R.id.fragment_timer_screen_add_details_btn);
+		
 		rel.setOnClickListener(new OnClickListener() {
 
 			@Override
@@ -62,6 +63,8 @@ public class FragmentTimerScreen extends Fragment {
 			}
 		});
 		id = (Button) view.findViewById(R.id.fragment_timer_screen_login_btn);
+		id.setBackgroundDrawable(getActivity().getResources()
+				.getDrawable(R.drawable.login_button_selector));
 		id.setOnClickListener(new OnClickListener() {
 
 			@Override
@@ -78,9 +81,14 @@ public class FragmentTimerScreen extends Fragment {
 							currentTimeInMillis);
 					TimeKeeperUtilMethods.setLoginStatus(getActivity(), true);
 					TimeKeeperUtilMethods.setTimerRunning(getActivity(), true);
+					id.setBackgroundDrawable(getActivity().getResources()
+							.getDrawable(R.drawable.logout_button_selector));
+					id.setText(getActivity().getResources().getString(
+							R.string.fragment_activity_button_logout));
 					timer = new LoginTimeCounter(currentTimeInMillis, 1000);
 					timer.Start();
 					TimeKeeperUtilMethods.animateTextColor(timerView);
+					rel.setVisibility(View.VISIBLE);
 					// TimeKeeperUtilMethods.animateTextColor(timerView,getResources().getColor(R.color.green_login));
 
 				} else {
@@ -90,6 +98,11 @@ public class FragmentTimerScreen extends Fragment {
 					timer.StopTimer();
 					timerView.setTextColor(getResources().getColor(
 							R.color.black));
+					id.setBackgroundDrawable(getActivity().getResources()
+							.getDrawable(R.drawable.login_button_selector));
+					id.setText(getActivity().getResources().getString(
+							R.string.fragment_activity_button_login));
+					rel.setVisibility(View.GONE);
 
 				}
 
@@ -178,13 +191,18 @@ public class FragmentTimerScreen extends Fragment {
 		if (isLoggedIn) {
 
 			TimeKeeperUtilMethods.animateTextColor(timerView);
-
+			id.setBackgroundDrawable(getActivity().getResources().getDrawable(
+					R.drawable.logout_button_selector));
+			rel.setVisibility(View.VISIBLE);
+			id.setText(getActivity().getResources().getString(
+					R.string.fragment_activity_button_logout));
 			if (TimeKeeperUtilMethods.getTimerRunning(getActivity()) == false) {
 
 				long currentTimeInMillis = TimeKeeperUtilMethods
 						.getLoginTime(getActivity());
 				TimeKeeperUtilMethods.setLoginStatus(getActivity(), true);
 				TimeKeeperUtilMethods.setTimerRunning(getActivity(), true);
+
 				timer = new LoginTimeCounter(currentTimeInMillis, 1000);
 				timer.Start();
 			}

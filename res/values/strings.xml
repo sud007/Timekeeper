@@ -33,7 +33,15 @@
     <string name="activity_add_details_remarks_hint">Remarks</string>
     <string name="activity_add_details_save_button">Save</string>
     <string name="activity_add_details_title">Add Work Details</string>
- <!-- About Timekeeper -->
+    <!-- Fragment Monitor -->
+    <string name="fragment_monitor_screen_login_time">Login Time</string>
+    <string name="fragment_monitor_screen_logout_time">Logout Time</string>
+    <string name="fragment_monitor_screen_hours_worked">Hours Worked</string>
+     <string name="fragment_monitor_screen_forget_text">Oops! Did you forgot to select a day ?</string>
+    <string name="fragment_monitor_screen_find_button">Find</string>
+       <string name="fragment_monitor_screen_select_date">Select Date for Editing</string>
+     
+    <!-- About Timekeeper -->
     <string name="activity_about_timekeeper_about_text">00:00:00</string>
 
     <!-- Help Timekeepr -->

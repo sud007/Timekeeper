@@ -237,7 +237,7 @@ public class TimeKeeperUtilMethods {
 		};
 
 		final ObjectAnimator animator = ObjectAnimator.ofInt(timerView,
-				property, Color.GREEN);
+				property, Color.parseColor("#009944"));
 		animator.setDuration(700L);
 		animator.setEvaluator(new ArgbEvaluator());
 		animator.setInterpolator(new DecelerateInterpolator(0.1f));

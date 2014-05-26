@@ -23,5 +23,7 @@
     <color name="dark_dark_grey">#282828</color>
     <color name="light_grey">#353535</color>
     <color name="transparent_black">#CC000000</color>
+    <color name="CCC">#CCCCCC</color>
+    
     
 </resources>

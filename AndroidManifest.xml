@@ -43,11 +43,11 @@
         <activity
             android:name="com.cleanapps.timekeeper.main.ActivityRegistration"
             android:label="@string/app_name" >
-<!--             <intent-filter> -->
-<!--                 <action android:name="android.intent.action.MAIN" /> -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-<!--                 <category android:name="android.intent.category.LAUNCHER" /> -->
-<!--             </intent-filter> -->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name="com.cleanapps.timekeeper.main.SettingsTimekeeper"
@@ -70,12 +70,12 @@
             android:name="com.cleanapps.timekeeper.main.TimekeeperMain"
             android:label="@string/app_name" >
 
-            <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+<!--             <intent-filter> -->
+<!--             <action android:name="android.intent.action.MAIN" /> -->
 
 
-            <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+<!--             <category android:name="android.intent.category.LAUNCHER" /> -->
+<!--             </intent-filter> -->
         </activity>
     </application>
 

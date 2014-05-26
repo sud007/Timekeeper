@@ -41,7 +41,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int adSize=0x7f010000;
+        public static final int adSize=0x7f01000c;
         /** 
     A comma-separated list of the supported ad sizes. The sizes must be one of
     BANNER, FULL_BANNER, LEADERBOARD, MEDIUM_RECTANGLE, SMART_BANNER,
@@ -54,7 +54,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int adSizes=0x7f010001;
+        public static final int adSizes=0x7f01000d;
         /**  The ad unit ID. 
          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
@@ -63,7 +63,77 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int adUnitId=0x7f010002;
+        public static final int adUnitId=0x7f01000e;
+        /**  Appearance of the buy button. Must be one of "classic", "grayscale" and "monochrome" 
+         <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>classic</code></td><td>1</td><td></td></tr>
+<tr><td><code>grayscale</code></td><td>2</td><td></td></tr>
+<tr><td><code>monochrome</code></td><td>3</td><td></td></tr>
+</table>
+         */
+        public static final int buyButtonAppearance=0x7f010024;
+        /**  Height of the buy button. This includes an 8dp padding (4dp on each side) used for
+             pressed and focused states of the button. The value can be a specific height, e.g.
+             "48dp", or special values "match_parent" and "wrap_content". 
+         <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+<p>May be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>match_parent</code></td><td>-1</td><td></td></tr>
+<tr><td><code>wrap_content</code></td><td>-2</td><td></td></tr>
+</table>
+         */
+        public static final int buyButtonHeight=0x7f010021;
+        /**  Text on the buy button. Must be one of "buy_with_google", "buy_now" and "book_now" 
+         <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>buy_with_google</code></td><td>1</td><td></td></tr>
+<tr><td><code>buy_now</code></td><td>2</td><td></td></tr>
+<tr><td><code>book_now</code></td><td>3</td><td></td></tr>
+</table>
+         */
+        public static final int buyButtonText=0x7f010023;
+        /**  Width of the buy button. This includes an 8dp padding (4dp on each side) used for
+             pressed and focused states of the button. The value can be a specific width, e.g.
+             "300dp", or special values "match_parent" and "wrap_content". 
+         <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+<p>May be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>match_parent</code></td><td>-1</td><td></td></tr>
+<tr><td><code>wrap_content</code></td><td>-2</td><td></td></tr>
+</table>
+         */
+        public static final int buyButtonWidth=0x7f010022;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -71,7 +141,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int cameraBearing=0x7f010004;
+        public static final int cameraBearing=0x7f010010;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -79,7 +149,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int cameraTargetLat=0x7f010005;
+        public static final int cameraTargetLat=0x7f010011;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -87,7 +157,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int cameraTargetLng=0x7f010006;
+        public static final int cameraTargetLng=0x7f010012;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -95,7 +165,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int cameraTilt=0x7f010007;
+        public static final int cameraTilt=0x7f010013;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -103,7 +173,42 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int cameraZoom=0x7f010008;
+        public static final int cameraZoom=0x7f010014;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int dayBackground=0x7f010001;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int dayTextColor=0x7f010002;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int dividerColor=0x7f010000;
+        /**  Google Wallet environment to use 
+         <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>production</code></td><td>1</td><td></td></tr>
+<tr><td><code>sandbox</code></td><td>0</td><td></td></tr>
+<tr><td><code>strict_sandbox</code></td><td>2</td><td></td></tr>
+</table>
+         */
+        public static final int environment=0x7f01001e;
         /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -114,7 +219,7 @@ containing a value of this type.
 <tr><td><code>half</code></td><td>2</td><td></td></tr>
 </table>
          */
-        public static final int fitScreenWidth=0x7f010020;
+        public static final int fitScreenWidth=0x7f01003a;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -122,7 +227,24 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int forwardTiltOffset=0x7f01001f;
+        public static final int forwardTiltOffset=0x7f010039;
+        /**  Fragment mode 
+         <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>buyButton</code></td><td>1</td><td></td></tr>
+<tr><td><code>selectionDetails</code></td><td>2</td><td></td></tr>
+</table>
+         */
+        public static final int fragmentMode=0x7f010020;
+        /**  A style resource specifing attributes to customize the look and feel of WalletFragment 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int fragmentStyle=0x7f01001f;
         /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -134,7 +256,16 @@ containing a value of this type.
 <tr><td><code>center</code></td><td>17</td><td></td></tr>
 </table>
          */
-        public static final int gravity=0x7f010021;
+        public static final int gravity=0x7f01003b;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int headerTextColor=0x7f010004;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -142,7 +273,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int hint=0x7f010022;
+        public static final int hint=0x7f01003c;
         /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -153,7 +284,7 @@ containing a value of this type.
 <tr><td><code>textPassword</code></td><td>1</td><td></td></tr>
 </table>
          */
-        public static final int inputType=0x7f010023;
+        public static final int inputType=0x7f01003d;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -161,7 +292,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int intensity=0x7f01001d;
+        public static final int intensity=0x7f010037;
         /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -175,7 +306,58 @@ containing a value of this type.
 <tr><td><code>hybrid</code></td><td>4</td><td></td></tr>
 </table>
          */
-        public static final int mapType=0x7f010003;
+        public static final int mapType=0x7f01000f;
+        /**  Masked wallet details background 
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int maskedWalletDetailsBackground=0x7f010027;
+        /**  "Change" button background in masked wallet details view 
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int maskedWalletDetailsButtonBackground=0x7f010029;
+        /**  TextAppearance for the "Change" button in masked wallet details view 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int maskedWalletDetailsButtonTextAppearance=0x7f010028;
+        /**  TextAppearance for headers describing masked wallet details 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int maskedWalletDetailsHeaderTextAppearance=0x7f010026;
+        /**  Type of the wallet logo image in masked wallet details view 
+         <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>classic</code></td><td>1</td><td></td></tr>
+<tr><td><code>monochrome</code></td><td>2</td><td></td></tr>
+</table>
+         */
+        public static final int maskedWalletDetailsLogoImageType=0x7f01002b;
+        /**  Color of the Google Wallet logo text in masked wallet details view 
+         <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int maskedWalletDetailsLogoTextColor=0x7f01002a;
+        /**  TextAppearance for masked wallet details 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int maskedWalletDetailsTextAppearance=0x7f010025;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -184,7 +366,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int pstsDividerColor=0x7f010014;
+        public static final int pstsDividerColor=0x7f01002e;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -194,7 +376,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int pstsDividerPadding=0x7f010017;
+        public static final int pstsDividerPadding=0x7f010031;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -203,7 +385,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int pstsIndicatorColor=0x7f010012;
+        public static final int pstsIndicatorColor=0x7f01002c;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -213,7 +395,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int pstsIndicatorHeight=0x7f010015;
+        public static final int pstsIndicatorHeight=0x7f01002f;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -223,7 +405,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int pstsScrollOffset=0x7f010019;
+        public static final int pstsScrollOffset=0x7f010033;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -231,11 +413,11 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int pstsShouldExpand=0x7f01001b;
+        public static final int pstsShouldExpand=0x7f010035;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int pstsTabBackground=0x7f01001a;
+        public static final int pstsTabBackground=0x7f010034;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -245,7 +427,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int pstsTabPaddingLeftRight=0x7f010018;
+        public static final int pstsTabPaddingLeftRight=0x7f010032;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -253,7 +435,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int pstsTextAllCaps=0x7f01001c;
+        public static final int pstsTextAllCaps=0x7f010036;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -262,7 +444,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int pstsUnderlineColor=0x7f010013;
+        public static final int pstsUnderlineColor=0x7f01002d;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -272,16 +454,63 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int pstsUnderlineHeight=0x7f010016;
-        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
-"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+        public static final int pstsUnderlineHeight=0x7f010030;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int reflectionColor=0x7f010011;
+        public static final int state_current_month=0x7f010006;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int state_highlighted=0x7f01000b;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int state_range_first=0x7f010008;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int state_range_last=0x7f01000a;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int state_range_middle=0x7f010009;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int state_selectable=0x7f010005;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int state_today=0x7f010007;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -289,7 +518,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int text=0x7f010024;
+        public static final int text=0x7f01003e;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -298,7 +527,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int textColorFloatLabelFocussed=0x7f010029;
+        public static final int textColorFloatLabelFocussed=0x7f010043;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -307,7 +536,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int textColorFloatLabelUnFocussed=0x7f01002a;
+        public static final int textColorFloatLabelUnFocussed=0x7f010044;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -316,7 +545,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int textColorFocussed=0x7f010027;
+        public static final int textColorFocussed=0x7f010041;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -325,7 +554,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int textColorHint=0x7f010026;
+        public static final int textColorHint=0x7f010040;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -334,7 +563,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int textColorUnFocussed=0x7f010028;
+        public static final int textColorUnFocussed=0x7f010042;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -344,7 +573,19 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int textSize=0x7f010025;
+        public static final int textSize=0x7f01003f;
+        /**  Theme to be used for the Wallet selector 
+         <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>holo_dark</code></td><td>0</td><td></td></tr>
+<tr><td><code>holo_light</code></td><td>1</td><td></td></tr>
+</table>
+         */
+        public static final int theme=0x7f01001d;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -352,7 +593,16 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int tiltSensitivity=0x7f01001e;
+        public static final int tiltSensitivity=0x7f010038;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int titleTextColor=0x7f010003;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -360,7 +610,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int uiCompass=0x7f010009;
+        public static final int uiCompass=0x7f010015;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -368,7 +618,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int uiRotateGestures=0x7f01000a;
+        public static final int uiRotateGestures=0x7f010016;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -376,7 +626,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int uiScrollGestures=0x7f01000b;
+        public static final int uiScrollGestures=0x7f010017;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -384,7 +634,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int uiTiltGestures=0x7f01000c;
+        public static final int uiTiltGestures=0x7f010018;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -392,7 +642,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int uiZoomControls=0x7f01000d;
+        public static final int uiZoomControls=0x7f010019;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -400,7 +650,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int uiZoomGestures=0x7f01000e;
+        public static final int uiZoomGestures=0x7f01001a;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -408,7 +658,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int useViewLifecycle=0x7f01000f;
+        public static final int useViewLifecycle=0x7f01001b;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -416,50 +666,88 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int zOrderOnTop=0x7f010010;
+        public static final int zOrderOnTop=0x7f01001c;
     }
     public static final class color {
-        public static final int background=0x7f050015;
-        public static final int background_tab_pressed=0x7f05000a;
-        public static final int black=0x7f050017;
-        public static final int blue_light=0x7f05001c;
-        public static final int blue_light_faded=0x7f05001d;
-        public static final int common_action_bar_splitter=0x7f050009;
+        public static final int CCC=0x7f05003a;
+        public static final int background=0x7f05002d;
+        public static final int background_tab_pressed=0x7f050022;
+        public static final int black=0x7f05002f;
+        public static final int blue_light=0x7f050034;
+        public static final int blue_light_faded=0x7f050035;
+        public static final int calendar_active_month_bg=0x7f050000;
+        public static final int calendar_bg=0x7f050001;
+        public static final int calendar_divider=0x7f050002;
+        public static final int calendar_highlighted_day_bg=0x7f050005;
+        public static final int calendar_inactive_month_bg=0x7f050003;
+        public static final int calendar_selected_day_bg=0x7f050004;
+        public static final int calendar_selected_range_bg=0x7f050006;
+        public static final int calendar_text_active=0x7f050008;
+        public static final int calendar_text_inactive=0x7f050007;
+        public static final int calendar_text_selected=0x7f050009;
+        public static final int calendar_text_selector=0x7f05003b;
+        public static final int calendar_text_unselectable=0x7f05000a;
+        public static final int common_action_bar_splitter=0x7f050014;
         /**  Sign-in Button Colors 
          */
-        public static final int common_signin_btn_dark_text_default=0x7f050000;
-        public static final int common_signin_btn_dark_text_disabled=0x7f050002;
-        public static final int common_signin_btn_dark_text_focused=0x7f050003;
-        public static final int common_signin_btn_dark_text_pressed=0x7f050001;
-        public static final int common_signin_btn_default_background=0x7f050008;
-        public static final int common_signin_btn_light_text_default=0x7f050004;
-        public static final int common_signin_btn_light_text_disabled=0x7f050006;
-        public static final int common_signin_btn_light_text_focused=0x7f050007;
-        public static final int common_signin_btn_light_text_pressed=0x7f050005;
-        public static final int common_signin_btn_text_dark=0x7f050022;
-        public static final int common_signin_btn_text_light=0x7f050023;
-        public static final int dark_dark_grey=0x7f05001f;
-        public static final int dark_grey=0x7f05001e;
-        public static final int dark_red=0x7f05001a;
-        public static final int faded_white=0x7f050014;
-        public static final int green_login=0x7f05000b;
-        public static final int grey=0x7f050013;
-        public static final int grey_dark=0x7f05000d;
-        public static final int grey_light=0x7f05000e;
-        public static final int light_grey=0x7f050020;
-        public static final int opaque_white=0x7f05000f;
-        public static final int orange=0x7f050012;
-        public static final int red=0x7f050016;
-        public static final int red_faded1=0x7f050019;
-        public static final int red_faded2=0x7f05001b;
-        public static final int red_logout=0x7f05000c;
-        public static final int transparent=0x7f050018;
-        public static final int transparent_black=0x7f050021;
-        public static final int transparent_white=0x7f050010;
-        public static final int white=0x7f050011;
+        public static final int common_signin_btn_dark_text_default=0x7f05000b;
+        public static final int common_signin_btn_dark_text_disabled=0x7f05000d;
+        public static final int common_signin_btn_dark_text_focused=0x7f05000e;
+        public static final int common_signin_btn_dark_text_pressed=0x7f05000c;
+        public static final int common_signin_btn_default_background=0x7f050013;
+        public static final int common_signin_btn_light_text_default=0x7f05000f;
+        public static final int common_signin_btn_light_text_disabled=0x7f050011;
+        public static final int common_signin_btn_light_text_focused=0x7f050012;
+        public static final int common_signin_btn_light_text_pressed=0x7f050010;
+        public static final int common_signin_btn_text_dark=0x7f05003c;
+        public static final int common_signin_btn_text_light=0x7f05003d;
+        public static final int dark_dark_grey=0x7f050037;
+        public static final int dark_grey=0x7f050036;
+        public static final int dark_red=0x7f050032;
+        public static final int faded_white=0x7f05002c;
+        public static final int green_login=0x7f050023;
+        public static final int grey=0x7f05002b;
+        public static final int grey_dark=0x7f050025;
+        public static final int grey_light=0x7f050026;
+        public static final int light_grey=0x7f050038;
+        public static final int opaque_white=0x7f050027;
+        public static final int orange=0x7f05002a;
+        public static final int red=0x7f05002e;
+        public static final int red_faded1=0x7f050031;
+        public static final int red_faded2=0x7f050033;
+        public static final int red_logout=0x7f050024;
+        public static final int transparent=0x7f050030;
+        public static final int transparent_black=0x7f050039;
+        public static final int transparent_white=0x7f050028;
+        public static final int wallet_bright_foreground_disabled_holo_light=0x7f05001a;
+        /** 
+         Wallet colors to support consistent Wallet fragment holo dark UI in client application
+         regardless of the theme and device type
+    
+         */
+        public static final int wallet_bright_foreground_holo_dark=0x7f050015;
+        public static final int wallet_bright_foreground_holo_light=0x7f05001b;
+        public static final int wallet_dim_foreground_disabled_holo_dark=0x7f050017;
+        public static final int wallet_dim_foreground_holo_dark=0x7f050016;
+        public static final int wallet_dim_foreground_inverse_disabled_holo_dark=0x7f050019;
+        public static final int wallet_dim_foreground_inverse_holo_dark=0x7f050018;
+        public static final int wallet_highlighted_text_holo_dark=0x7f05001f;
+        public static final int wallet_highlighted_text_holo_light=0x7f05001e;
+        public static final int wallet_hint_foreground_holo_dark=0x7f05001d;
+        public static final int wallet_hint_foreground_holo_light=0x7f05001c;
+        public static final int wallet_holo_blue_light=0x7f050020;
+        public static final int wallet_link_text_light=0x7f050021;
+        public static final int wallet_primary_text_holo_light=0x7f05003e;
+        public static final int wallet_secondary_text_holo_dark=0x7f05003f;
+        public static final int white=0x7f050029;
     }
     public static final class dimen {
-        public static final int button_textSize=0x7f09000b;
+        public static final int button_textSize=0x7f060010;
+        public static final int calendar_day_headers_paddingbottom=0x7f060000;
+        public static final int calendar_month_title_bottommargin=0x7f060002;
+        public static final int calendar_month_topmargin=0x7f060001;
+        public static final int calendar_text_medium=0x7f060003;
+        public static final int calendar_text_small=0x7f060004;
         /**  Default screen margins, per the Android Design guidelines. 
 
          Example customization of dimensions originally defined in res/values/dimens.xml
@@ -467,20 +755,20 @@ containing a value of this type.
          would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively).
     
          */
-        public static final int horizontal_margin=0x7f090000;
-        public static final int horizontal_margin_reduced=0x7f090004;
-        public static final int large_text=0x7f090008;
-        public static final int margin_big=0x7f090005;
-        public static final int padding_large=0x7f09000e;
-        public static final int padding_small=0x7f09000d;
-        public static final int padding_ultra_small=0x7f09000c;
-        public static final int small_text=0x7f090009;
-        public static final int timer_text=0x7f09000a;
-        public static final int title_text=0x7f090006;
-        public static final int ultra_small_text=0x7f090007;
-        public static final int vertical_margin=0x7f090001;
-        public static final int vertical_margin_increased=0x7f090002;
-        public static final int vertical_margin_reduced=0x7f090003;
+        public static final int horizontal_margin=0x7f060005;
+        public static final int horizontal_margin_reduced=0x7f060009;
+        public static final int large_text=0x7f06000d;
+        public static final int margin_big=0x7f06000a;
+        public static final int padding_large=0x7f060013;
+        public static final int padding_small=0x7f060012;
+        public static final int padding_ultra_small=0x7f060011;
+        public static final int small_text=0x7f06000e;
+        public static final int timer_text=0x7f06000f;
+        public static final int title_text=0x7f06000b;
+        public static final int ultra_small_text=0x7f06000c;
+        public static final int vertical_margin=0x7f060006;
+        public static final int vertical_margin_increased=0x7f060007;
+        public static final int vertical_margin_reduced=0x7f060008;
     }
     public static final class drawable {
         public static final int add_details_selector=0x7f020000;
@@ -491,108 +779,142 @@ containing a value of this type.
         public static final int btn_signin_focus=0x7f020005;
         public static final int btn_signin_normal=0x7f020006;
         public static final int btn_signin_pressed=0x7f020007;
-        public static final int common_signin_btn_icon_dark=0x7f020008;
-        public static final int common_signin_btn_icon_disabled_dark=0x7f020009;
-        public static final int common_signin_btn_icon_disabled_focus_dark=0x7f02000a;
-        public static final int common_signin_btn_icon_disabled_focus_light=0x7f02000b;
-        public static final int common_signin_btn_icon_disabled_light=0x7f02000c;
-        public static final int common_signin_btn_icon_focus_dark=0x7f02000d;
-        public static final int common_signin_btn_icon_focus_light=0x7f02000e;
-        public static final int common_signin_btn_icon_light=0x7f02000f;
-        public static final int common_signin_btn_icon_normal_dark=0x7f020010;
-        public static final int common_signin_btn_icon_normal_light=0x7f020011;
-        public static final int common_signin_btn_icon_pressed_dark=0x7f020012;
-        public static final int common_signin_btn_icon_pressed_light=0x7f020013;
-        public static final int common_signin_btn_text_dark=0x7f020014;
-        public static final int common_signin_btn_text_disabled_dark=0x7f020015;
-        public static final int common_signin_btn_text_disabled_focus_dark=0x7f020016;
-        public static final int common_signin_btn_text_disabled_focus_light=0x7f020017;
-        public static final int common_signin_btn_text_disabled_light=0x7f020018;
-        public static final int common_signin_btn_text_focus_dark=0x7f020019;
-        public static final int common_signin_btn_text_focus_light=0x7f02001a;
-        public static final int common_signin_btn_text_light=0x7f02001b;
-        public static final int common_signin_btn_text_normal_dark=0x7f02001c;
-        public static final int common_signin_btn_text_normal_light=0x7f02001d;
-        public static final int common_signin_btn_text_pressed_dark=0x7f02001e;
-        public static final int common_signin_btn_text_pressed_light=0x7f02001f;
-        public static final int edit_text_background=0x7f020020;
-        public static final int ic_action_event=0x7f020021;
-        public static final int ic_action_new=0x7f020022;
-        public static final int ic_action_overflow=0x7f020023;
-        public static final int ic_action_user=0x7f020024;
-        public static final int ic_expand=0x7f020025;
-        public static final int ic_help=0x7f020026;
-        public static final int ic_info=0x7f020027;
-        public static final int ic_launcher=0x7f020028;
-        public static final int ic_plusone_medium_off_client=0x7f020029;
-        public static final int ic_plusone_small_off_client=0x7f02002a;
-        public static final int ic_plusone_standard_off_client=0x7f02002b;
-        public static final int ic_plusone_tall_off_client=0x7f02002c;
-        public static final int ic_settings=0x7f02002d;
-        public static final int login_button_selector=0x7f02002e;
-        public static final int logout_button_selector=0x7f02002f;
-        public static final int mask=0x7f020030;
-        public static final int menu_left_devider=0x7f020031;
-        public static final int registration_bg=0x7f020032;
-        public static final int ribbon_bw=0x7f020033;
-        public static final int ribbon_bw_new=0x7f020034;
-        public static final int signin_button_selector=0x7f020035;
-        public static final int splash_bg=0x7f020036;
-        public static final int spot_mask=0x7f020037;
-        public static final int start_button=0x7f020038;
-        public static final int start_button_selector=0x7f020039;
-        public static final int stop_button_selector=0x7f02003a;
-        public static final int text_field=0x7f02003b;
-        public static final int toggle_light_blue=0x7f02003c;
+        public static final int calendar_bg_selector=0x7f020008;
+        public static final int calendar_xxl=0x7f020009;
+        public static final int calendar_xxl2=0x7f02000a;
+        public static final int calender_picker_click_effect=0x7f02000b;
+        public static final int common_signin_btn_icon_dark=0x7f02000c;
+        public static final int common_signin_btn_icon_disabled_dark=0x7f02000d;
+        public static final int common_signin_btn_icon_disabled_focus_dark=0x7f02000e;
+        public static final int common_signin_btn_icon_disabled_focus_light=0x7f02000f;
+        public static final int common_signin_btn_icon_disabled_light=0x7f020010;
+        public static final int common_signin_btn_icon_focus_dark=0x7f020011;
+        public static final int common_signin_btn_icon_focus_light=0x7f020012;
+        public static final int common_signin_btn_icon_light=0x7f020013;
+        public static final int common_signin_btn_icon_normal_dark=0x7f020014;
+        public static final int common_signin_btn_icon_normal_light=0x7f020015;
+        public static final int common_signin_btn_icon_pressed_dark=0x7f020016;
+        public static final int common_signin_btn_icon_pressed_light=0x7f020017;
+        public static final int common_signin_btn_text_dark=0x7f020018;
+        public static final int common_signin_btn_text_disabled_dark=0x7f020019;
+        public static final int common_signin_btn_text_disabled_focus_dark=0x7f02001a;
+        public static final int common_signin_btn_text_disabled_focus_light=0x7f02001b;
+        public static final int common_signin_btn_text_disabled_light=0x7f02001c;
+        public static final int common_signin_btn_text_focus_dark=0x7f02001d;
+        public static final int common_signin_btn_text_focus_light=0x7f02001e;
+        public static final int common_signin_btn_text_light=0x7f02001f;
+        public static final int common_signin_btn_text_normal_dark=0x7f020020;
+        public static final int common_signin_btn_text_normal_light=0x7f020021;
+        public static final int common_signin_btn_text_pressed_dark=0x7f020022;
+        public static final int common_signin_btn_text_pressed_light=0x7f020023;
+        public static final int design=0x7f020024;
+        public static final int edit_text_background=0x7f020025;
+        public static final int ic_action_event=0x7f020026;
+        public static final int ic_action_new=0x7f020027;
+        public static final int ic_action_overflow=0x7f020028;
+        public static final int ic_action_user=0x7f020029;
+        public static final int ic_expand=0x7f02002a;
+        public static final int ic_help=0x7f02002b;
+        public static final int ic_info=0x7f02002c;
+        public static final int ic_launcher=0x7f02002d;
+        public static final int ic_plusone_medium_off_client=0x7f02002e;
+        public static final int ic_plusone_small_off_client=0x7f02002f;
+        public static final int ic_plusone_standard_off_client=0x7f020030;
+        public static final int ic_plusone_tall_off_client=0x7f020031;
+        public static final int ic_settings=0x7f020032;
+        public static final int login_button_selector=0x7f020033;
+        public static final int logout_button_selector=0x7f020034;
+        public static final int menu_left_devider=0x7f020035;
+        public static final int powered_by_google_dark=0x7f020036;
+        public static final int powered_by_google_light=0x7f020037;
+        public static final int registration_bg=0x7f020038;
+        public static final int ribbon_bw=0x7f020039;
+        public static final int ribbon_bw_new=0x7f02003a;
+        public static final int signin_button_selector=0x7f02003b;
+        public static final int splash_bg=0x7f02003c;
+        public static final int start_button=0x7f02003d;
+        public static final int start_button_selector=0x7f02003e;
+        public static final int stop_button_selector=0x7f02003f;
+        public static final int text_field=0x7f020040;
+        public static final int toggle_light_blue=0x7f020041;
     }
     public static final class id {
-        public static final int activity_add_details_client_info_et=0x7f06000d;
-        public static final int activity_add_details_remarks_et=0x7f06000f;
-        public static final int activity_add_details_work_done_et=0x7f06000e;
-        public static final int activity_change_password_old_password=0x7f06000b;
-        public static final int activity_registration_appname=0x7f060015;
-        public static final int activity_registration_apptag=0x7f060016;
-        public static final int activity_registration_hi_text=0x7f060012;
-        public static final int activity_registration_ribbon=0x7f060014;
-        public static final int activity_registration_sign_in_button=0x7f060013;
-        public static final int activity_splashanim_title_text=0x7f060018;
-        public static final int activity_timekeeper_main_about=0x7f06002b;
-        public static final int activity_timekeeper_main_help=0x7f06002a;
-        public static final int activity_timekeeper_main_more=0x7f060028;
-        public static final int activity_timekeeper_main_settings=0x7f060029;
-        public static final int activity_timer_screen_tabs=0x7f060024;
-        public static final int activity_timer_screen_viewpager=0x7f060025;
-        public static final int background=0x7f060011;
-        public static final int btn_sign_in=0x7f060017;
-        public static final int center=0x7f060009;
-        public static final int container=0x7f060010;
-        public static final int float_label_text_6=0x7f06000c;
-        public static final int floating_label_edit_text=0x7f060027;
-        public static final int floating_label_hint=0x7f060026;
-        public static final int fragment_data_bottom_container=0x7f06001d;
-        public static final int fragment_data_input_client_info=0x7f06001a;
-        public static final int fragment_data_input_login_button=0x7f060019;
-        public static final int fragment_data_input_logout_button=0x7f06001f;
-        public static final int fragment_data_input_remarks=0x7f06001c;
-        public static final int fragment_data_input_save_button=0x7f06001e;
-        public static final int fragment_data_input_work_done=0x7f06001b;
-        public static final int fragment_timer_screen_add_details_btn=0x7f060020;
-        public static final int fragment_timer_screen_add_details_image=0x7f060021;
-        public static final int fragment_timer_screen_login_btn=0x7f060022;
-        public static final int fragment_timer_screen_login_time=0x7f060023;
-        public static final int full=0x7f060005;
-        public static final int half=0x7f060006;
-        public static final int hybrid=0x7f060004;
-        public static final int left=0x7f060007;
-        public static final int none=0x7f060000;
-        public static final int normal=0x7f060001;
-        public static final int right=0x7f060008;
-        public static final int satellite=0x7f060002;
-        public static final int terrain=0x7f060003;
-        public static final int textPassword=0x7f06000a;
+        public static final int activity_add_details_client_info_et=0x7f09001c;
+        public static final int activity_add_details_remarks_et=0x7f09001e;
+        public static final int activity_add_details_work_done_et=0x7f09001d;
+        public static final int activity_change_password_old_password=0x7f09001a;
+        public static final int activity_registration_appname=0x7f090024;
+        public static final int activity_registration_apptag=0x7f090025;
+        public static final int activity_registration_hi_text=0x7f090021;
+        public static final int activity_registration_ribbon=0x7f090023;
+        public static final int activity_registration_sign_in_button=0x7f090022;
+        public static final int activity_splashanim_title_text=0x7f090027;
+        public static final int activity_timekeeper_main_about=0x7f090048;
+        public static final int activity_timekeeper_main_help=0x7f090047;
+        public static final int activity_timekeeper_main_more=0x7f090045;
+        public static final int activity_timekeeper_main_settings=0x7f090046;
+        public static final int activity_timer_screen_tabs=0x7f090041;
+        public static final int activity_timer_screen_viewpager=0x7f090042;
+        public static final int background=0x7f090020;
+        public static final int book_now=0x7f090010;
+        public static final int btn_sign_in=0x7f090026;
+        public static final int buyButton=0x7f09000a;
+        public static final int buy_now=0x7f09000f;
+        public static final int buy_with_google=0x7f09000e;
+        public static final int calendar_grid=0x7f090040;
+        public static final int calendar_view=0x7f090028;
+        public static final int center=0x7f090018;
+        public static final int classic=0x7f090011;
+        public static final int container=0x7f09001f;
+        public static final int float_label_text_6=0x7f09001b;
+        public static final int floating_label_edit_text=0x7f090044;
+        public static final int floating_label_hint=0x7f090043;
+        public static final int fragment_data_bottom_container=0x7f09002d;
+        public static final int fragment_data_input_client_info=0x7f09002a;
+        public static final int fragment_data_input_login_button=0x7f090029;
+        public static final int fragment_data_input_logout_button=0x7f09002f;
+        public static final int fragment_data_input_remarks=0x7f09002c;
+        public static final int fragment_data_input_save_button=0x7f09002e;
+        public static final int fragment_data_input_work_done=0x7f09002b;
+        public static final int fragment_monitor_screen_calender_button=0x7f090032;
+        public static final int fragment_monitor_screen_calnder_container=0x7f090030;
+        public static final int fragment_monitor_screen_calnder_text=0x7f090031;
+        public static final int fragment_monitor_screen_client_info_et=0x7f090038;
+        public static final int fragment_monitor_screen_data_container=0x7f090034;
+        public static final int fragment_monitor_screen_empty_container=0x7f090033;
+        public static final int fragment_monitor_screen_hours_worked=0x7f090037;
+        public static final int fragment_monitor_screen_login_time=0x7f090035;
+        public static final int fragment_monitor_screen_logout_time=0x7f090036;
+        public static final int fragment_monitor_screen_remarks_et=0x7f09003a;
+        public static final int fragment_monitor_screen_work_done_et=0x7f090039;
+        public static final int fragment_timer_screen_add_details_btn=0x7f09003b;
+        public static final int fragment_timer_screen_add_details_image=0x7f09003c;
+        public static final int fragment_timer_screen_login_btn=0x7f09003d;
+        public static final int fragment_timer_screen_login_time=0x7f09003e;
+        public static final int full=0x7f090014;
+        public static final int grayscale=0x7f090012;
+        public static final int half=0x7f090015;
+        public static final int holo_dark=0x7f090005;
+        public static final int holo_light=0x7f090006;
+        public static final int hybrid=0x7f090004;
+        public static final int left=0x7f090016;
+        public static final int match_parent=0x7f09000c;
+        public static final int monochrome=0x7f090013;
+        public static final int none=0x7f090000;
+        public static final int normal=0x7f090001;
+        public static final int production=0x7f090007;
+        public static final int right=0x7f090017;
+        public static final int sandbox=0x7f090008;
+        public static final int satellite=0x7f090002;
+        public static final int selectionDetails=0x7f09000b;
+        public static final int strict_sandbox=0x7f090009;
+        public static final int terrain=0x7f090003;
+        public static final int textPassword=0x7f090019;
+        public static final int title=0x7f09003f;
+        public static final int wrap_content=0x7f09000d;
     }
     public static final class integer {
-        public static final int google_play_services_version=0x7f080000;
+        public static final int google_play_services_version=0x7f0a0000;
     }
     public static final class layout {
         public static final int about_timekeeper=0x7f030000;
@@ -602,162 +924,178 @@ containing a value of this type.
         public static final int activity_registration1=0x7f030004;
         public static final int activity_sequential_animation=0x7f030005;
         public static final int activity_splash=0x7f030006;
-        public static final int data_input=0x7f030007;
-        public static final int fragment_activity_main=0x7f030008;
-        public static final int fragment_graphs_screen=0x7f030009;
-        public static final int fragment_monitor_screen=0x7f03000a;
-        public static final int fragment_timer_screen=0x7f03000b;
-        public static final int help_timekeeper=0x7f03000c;
-        public static final int settings_timekeeper=0x7f03000d;
-        public static final int timer_screen=0x7f03000e;
-        public static final int weddingparty_floatlabel_edittext=0x7f03000f;
+        public static final int calender_picker_dialog=0x7f030007;
+        public static final int data_input=0x7f030008;
+        public static final int fragment_activity_main=0x7f030009;
+        public static final int fragment_graphs_screen=0x7f03000a;
+        public static final int fragment_monitor_screen=0x7f03000b;
+        public static final int fragment_timer_screen=0x7f03000c;
+        public static final int help_timekeeper=0x7f03000d;
+        public static final int month=0x7f03000e;
+        public static final int settings_timekeeper=0x7f03000f;
+        public static final int timer_screen=0x7f030010;
+        public static final int weddingparty_floatlabel_edittext=0x7f030011;
+        public static final int week=0x7f030012;
     }
     public static final class menu {
         public static final int main=0x7f0b0000;
     }
     public static final class string {
-        public static final int action_settings=0x7f07001d;
+        public static final int action_settings=0x7f070025;
         /**  About Timekeeper 
          */
-        public static final int activity_about_timekeeper_about_text=0x7f070033;
+        public static final int activity_about_timekeeper_about_text=0x7f070041;
         /**  Activity Add Details 
          */
-        public static final int activity_add_details_client_hint=0x7f07002e;
+        public static final int activity_add_details_client_hint=0x7f070036;
         /**  Main Activity 
          */
-        public static final int activity_add_details_login_button=0x7f070024;
-        public static final int activity_add_details_logout_button=0x7f070025;
-        public static final int activity_add_details_remarks_hint=0x7f070030;
-        public static final int activity_add_details_save_button=0x7f070031;
-        public static final int activity_add_details_title=0x7f070032;
-        public static final int activity_add_details_work_done_hint=0x7f07002f;
+        public static final int activity_add_details_login_button=0x7f07002c;
+        public static final int activity_add_details_logout_button=0x7f07002d;
+        public static final int activity_add_details_remarks_hint=0x7f070038;
+        public static final int activity_add_details_save_button=0x7f070039;
+        public static final int activity_add_details_title=0x7f07003a;
+        public static final int activity_add_details_work_done_hint=0x7f070037;
         /**  Help Timekeepr 
          */
-        public static final int activity_help_timekeeper_some_text=0x7f070034;
-        public static final int activity_registration_by_cleanapps=0x7f070020;
-        public static final int activity_registration_edit_hint=0x7f070023;
-        public static final int activity_registration_google_plus=0x7f070022;
+        public static final int activity_help_timekeeper_some_text=0x7f070042;
+        public static final int activity_registration_by_cleanapps=0x7f070028;
+        public static final int activity_registration_edit_hint=0x7f07002b;
+        public static final int activity_registration_google_plus=0x7f07002a;
         /**  Registration Activity 
          */
-        public static final int activity_registration_hi=0x7f07001f;
-        public static final int activity_registration_tagline_text=0x7f070021;
+        public static final int activity_registration_hi=0x7f070027;
+        public static final int activity_registration_tagline_text=0x7f070029;
         /**  Settings Timekeeper 
          */
-        public static final int activity_settings_timekeeper_some_text=0x7f070035;
+        public static final int activity_settings_timekeeper_some_text=0x7f070043;
         /**  Splash animation activity 
          */
-        public static final int activity_splashanim_timeKeeper=0x7f07001e;
-        public static final int app_name=0x7f07001b;
-        /**   Title for notification shown when GooglePlayServices needs to be
-        enabled for a application to work. [CHAR LIMIT=70] 
-         */
-        public static final int auth_client_needs_enabling_title=0x7f070015;
-        /**   Title for notification shown when GooglePlayServices needs to be
-        installed for a application to work. [CHAR LIMIT=70] 
-         */
-        public static final int auth_client_needs_installation_title=0x7f070016;
-        /**   Title for notification shown when GooglePlayServices needs to be
-        udpated for a application to work. [CHAR LIMIT=70] 
-         */
-        public static final int auth_client_needs_update_title=0x7f070017;
-        /**   Title for notification shown when GooglePlayServices is unavailable [CHAR LIMIT=42] 
-         */
-        public static final int auth_client_play_services_err_notification_msg=0x7f070018;
-        /**   Requested by string saying which app requested the notification. [CHAR LIMIT=42] 
-         */
-        public static final int auth_client_requested_by_msg=0x7f070019;
-        /**   Title for notification shown when a bad version of GooglePlayServices
-        has been installed and needs correction for an application to work.
-        [CHAR LIMIT=70] 
-         */
-        public static final int auth_client_using_bad_version_title=0x7f070014;
+        public static final int activity_splashanim_timeKeeper=0x7f070026;
+        public static final int app_name=0x7f070023;
+        public static final int auth_client_needs_enabling_title=0x7f070004;
+        public static final int auth_client_needs_installation_title=0x7f070005;
+        public static final int auth_client_needs_update_title=0x7f070006;
+        public static final int auth_client_play_services_err_notification_msg=0x7f070007;
+        public static final int auth_client_requested_by_msg=0x7f070008;
+        public static final int auth_client_using_bad_version_title=0x7f070003;
         /**  Button in confirmation dialog to enable Google Play services.  Clicking it
         will direct user to application settings of Google Play services where they
         can enable it [CHAR LIMIT=40] 
          */
-        public static final int common_google_play_services_enable_button=0x7f070006;
+        public static final int common_google_play_services_enable_button=0x7f070014;
         /**  Message in confirmation dialog informing user they need to enable
         Google Play services in application settings [CHAR LIMIT=NONE] 
          */
-        public static final int common_google_play_services_enable_text=0x7f070005;
+        public static final int common_google_play_services_enable_text=0x7f070013;
         /**  Title of confirmation dialog informing user they need to enable
         Google Play services in application settings [CHAR LIMIT=40] 
          */
-        public static final int common_google_play_services_enable_title=0x7f070004;
+        public static final int common_google_play_services_enable_title=0x7f070012;
+        /**   Requested by string saying which app requested the notification. [CHAR LIMIT=42] 
+         */
+        public static final int common_google_play_services_error_notification_requested_by_msg=0x7f07000d;
         /**  Button in confirmation dialog for installing Google Play services [CHAR LIMIT=40] 
          */
-        public static final int common_google_play_services_install_button=0x7f070003;
+        public static final int common_google_play_services_install_button=0x7f070011;
         /**  (For phones) Message in confirmation dialog informing user that
         they need to install Google Play services (from Play Store) [CHAR LIMIT=NONE] 
          */
-        public static final int common_google_play_services_install_text_phone=0x7f070001;
+        public static final int common_google_play_services_install_text_phone=0x7f07000f;
         /**  (For tablets) Message in confirmation dialog informing user that
         they need to install Google Play services (from Play Store) [CHAR LIMIT=NONE] 
          */
-        public static final int common_google_play_services_install_text_tablet=0x7f070002;
+        public static final int common_google_play_services_install_text_tablet=0x7f070010;
         /**  Title of confirmation dialog informing user that they need to install
         Google Play services (from Play Store) [CHAR LIMIT=40] 
          */
-        public static final int common_google_play_services_install_title=0x7f070000;
+        public static final int common_google_play_services_install_title=0x7f07000e;
         /**  Message in confirmation dialog informing the user that they provided an invalid account. [CHAR LIMIT=NONE] 
          */
-        public static final int common_google_play_services_invalid_account_text=0x7f07000c;
+        public static final int common_google_play_services_invalid_account_text=0x7f07001a;
         /**  Title of confirmation dialog informing the user that they provided an invalid account. [CHAR LIMIT=40] 
          */
-        public static final int common_google_play_services_invalid_account_title=0x7f07000b;
+        public static final int common_google_play_services_invalid_account_title=0x7f070019;
+        /**   Title for notification shown when GooglePlayServices needs to be enabled for an
+        application to work. [CHAR LIMIT=70] 
+         */
+        public static final int common_google_play_services_needs_enabling_title=0x7f07000c;
         /**  Message in confirmation dialog informing the user that a network error occurred. [CHAR LIMIT=NONE] 
          */
-        public static final int common_google_play_services_network_error_text=0x7f07000a;
+        public static final int common_google_play_services_network_error_text=0x7f070018;
         /**  Title of confirmation dialog informing the user that a network error occurred. [CHAR LIMIT=40] 
          */
-        public static final int common_google_play_services_network_error_title=0x7f070009;
+        public static final int common_google_play_services_network_error_title=0x7f070017;
+        /**   Title for notification shown when GooglePlayServices needs to be installed
+        for an application to work. [CHAR LIMIT=70] 
+         */
+        public static final int common_google_play_services_notification_needs_installation_title=0x7f07000a;
+        /**   Title for notification shown when GooglePlayServices needs to be updated for an
+        application to work. [CHAR LIMIT=70] 
+         */
+        public static final int common_google_play_services_notification_needs_update_title=0x7f07000b;
+        /**   Title for notification shown when GooglePlayServices is unavailable [CHAR LIMIT=42] 
+         */
+        public static final int common_google_play_services_notification_ticker=0x7f070009;
         /**  Message in confirmation dialog informing user there is an unknown issue in Google Play
         services [CHAR LIMIT=NONE] 
          */
-        public static final int common_google_play_services_unknown_issue=0x7f07000d;
+        public static final int common_google_play_services_unknown_issue=0x7f07001b;
         /**  Message in confirmation dialog informing user that date on the device is not correct,
     causing certificate checks to fail. [CHAR LIMIT=NONE] 
          */
-        public static final int common_google_play_services_unsupported_date_text=0x7f070010;
+        public static final int common_google_play_services_unsupported_date_text=0x7f07001e;
         /**  Message in confirmation dialog informing user that Google Play services is not supported on their device [CHAR LIMIT=NONE] 
          */
-        public static final int common_google_play_services_unsupported_text=0x7f07000f;
+        public static final int common_google_play_services_unsupported_text=0x7f07001d;
         /**  Title of confirmation dialog informing user that Google Play services is not supported on their device [CHAR LIMIT=40] 
          */
-        public static final int common_google_play_services_unsupported_title=0x7f07000e;
+        public static final int common_google_play_services_unsupported_title=0x7f07001c;
         /**  Button in confirmation dialog for updating Google Play services [CHAR LIMIT=40] 
          */
-        public static final int common_google_play_services_update_button=0x7f070011;
+        public static final int common_google_play_services_update_button=0x7f07001f;
         /**  Message in confirmation dialog informing user that they need to update
         Google Play services (from Play Store) [CHAR LIMIT=NONE] 
          */
-        public static final int common_google_play_services_update_text=0x7f070008;
+        public static final int common_google_play_services_update_text=0x7f070016;
         /**  Title of confirmation dialog informing user that they need to update
         Google Play services (from Play Store) [CHAR LIMIT=40] 
          */
-        public static final int common_google_play_services_update_title=0x7f070007;
+        public static final int common_google_play_services_update_title=0x7f070015;
         /**  Sign-in button text [CHAR LIMIT=15] 
          */
-        public static final int common_signin_button_text=0x7f070012;
+        public static final int common_signin_button_text=0x7f070020;
         /**  Long form sign-in button text [CHAR LIMIT=30] 
          */
-        public static final int common_signin_button_text_long=0x7f070013;
-        public static final int fragment_activity_add_details=0x7f07002d;
+        public static final int common_signin_button_text_long=0x7f070021;
+        public static final int day_name_format=0x7f070000;
+        public static final int fragment_activity_add_details=0x7f070035;
         /**  Fragment Activity 
          */
-        public static final int fragment_activity_button_login=0x7f07002a;
-        public static final int fragment_activity_button_logout=0x7f07002b;
-        public static final int fragment_activity_time=0x7f07002c;
-        public static final int hello_world=0x7f07001c;
-        /**  Location client code resources (prefix with location_client) 
+        public static final int fragment_activity_button_login=0x7f070032;
+        public static final int fragment_activity_button_logout=0x7f070033;
+        public static final int fragment_activity_time=0x7f070034;
+        public static final int fragment_monitor_screen_find_button=0x7f07003f;
+        public static final int fragment_monitor_screen_forget_text=0x7f07003e;
+        public static final int fragment_monitor_screen_hours_worked=0x7f07003d;
+        /**  Fragment Monitor 
          */
-        public static final int location_client_powered_by_google=0x7f07001a;
-        public static final int timekeer_activity_menu_about=0x7f070029;
-        public static final int timekeer_activity_menu_help=0x7f070028;
+        public static final int fragment_monitor_screen_login_time=0x7f07003b;
+        public static final int fragment_monitor_screen_logout_time=0x7f07003c;
+        public static final int fragment_monitor_screen_select_date=0x7f070040;
+        public static final int hello_world=0x7f070024;
+        public static final int invalid_date=0x7f070001;
+        public static final int month_name_format=0x7f070002;
+        public static final int timekeer_activity_menu_about=0x7f070031;
+        public static final int timekeer_activity_menu_help=0x7f070030;
         /**  Timekeeper Activity 
          */
-        public static final int timekeer_activity_menu_overflow=0x7f070026;
-        public static final int timekeer_activity_menu_settings=0x7f070027;
+        public static final int timekeer_activity_menu_overflow=0x7f07002e;
+        public static final int timekeer_activity_menu_settings=0x7f07002f;
+        /**  Text on a placeholder buy button when Google Play services is not
+         available or up-to-date 
+         */
+        public static final int wallet_buy_button_place_holder=0x7f070022;
     }
     public static final class style {
         /** 
@@ -785,14 +1123,27 @@ containing a value of this type.
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f0a0000;
+        public static final int AppBaseTheme=0x7f080008;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f0a0001;
+        public static final int AppTheme=0x7f080009;
+        public static final int CalendarCell=0x7f080001;
+        public static final int CalendarCell_CalendarDate=0x7f080003;
+        public static final int CalendarCell_DayHeader=0x7f080002;
+        public static final int CalendarTitle=0x7f080000;
         /**  transparent theme 
          */
-        public static final int Theme_Transparent=0x7f0a0002;
+        public static final int Theme_Transparent=0x7f08000a;
+        public static final int WalletFragmentDefaultButtonTextAppearance=0x7f080006;
+        public static final int WalletFragmentDefaultDetailsHeaderTextAppearance=0x7f080005;
+        public static final int WalletFragmentDefaultDetailsTextAppearance=0x7f080004;
+        /** 
+         Default style of the wallet fragment that will be used if not set explicitly
+         when fragment is created
+    
+         */
+        public static final int WalletFragmentDefaultStyle=0x7f080007;
     }
     public static final class styleable {
         /** Attributes that can be used with a AdsAttrs.
@@ -812,7 +1163,7 @@ containing a value of this type.
            @see #AdsAttrs_adUnitId
          */
         public static final int[] AdsAttrs = {
-            0x7f010000, 0x7f010001, 0x7f010002
+            0x7f01000c, 0x7f01000d, 0x7f01000e
         };
         /**
           <p>
@@ -870,6 +1221,106 @@ containing a value of this type.
           @attr name com.cleanapps.timekeeper:adUnitId
         */
         public static final int AdsAttrs_adUnitId = 2;
+        /** Attributes that can be used with a CalendarPickerView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #CalendarPickerView_android_background android:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #CalendarPickerView_dayBackground com.cleanapps.timekeeper:dayBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #CalendarPickerView_dayTextColor com.cleanapps.timekeeper:dayTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #CalendarPickerView_dividerColor com.cleanapps.timekeeper:dividerColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #CalendarPickerView_headerTextColor com.cleanapps.timekeeper:headerTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #CalendarPickerView_titleTextColor com.cleanapps.timekeeper:titleTextColor}</code></td><td></td></tr>
+           </table>
+           @see #CalendarPickerView_android_background
+           @see #CalendarPickerView_dayBackground
+           @see #CalendarPickerView_dayTextColor
+           @see #CalendarPickerView_dividerColor
+           @see #CalendarPickerView_headerTextColor
+           @see #CalendarPickerView_titleTextColor
+         */
+        public static final int[] CalendarPickerView = {
+            0x010100d4, 0x7f010000, 0x7f010001, 0x7f010002,
+            0x7f010003, 0x7f010004
+        };
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#background}
+          attribute's value can be found in the {@link #CalendarPickerView} array.
+          @attr name android:background
+        */
+        public static final int CalendarPickerView_android_background = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.cleanapps.timekeeper.R.attr#dayBackground}
+          attribute's value can be found in the {@link #CalendarPickerView} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.cleanapps.timekeeper:dayBackground
+        */
+        public static final int CalendarPickerView_dayBackground = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.cleanapps.timekeeper.R.attr#dayTextColor}
+          attribute's value can be found in the {@link #CalendarPickerView} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.cleanapps.timekeeper:dayTextColor
+        */
+        public static final int CalendarPickerView_dayTextColor = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.cleanapps.timekeeper.R.attr#dividerColor}
+          attribute's value can be found in the {@link #CalendarPickerView} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.cleanapps.timekeeper:dividerColor
+        */
+        public static final int CalendarPickerView_dividerColor = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.cleanapps.timekeeper.R.attr#headerTextColor}
+          attribute's value can be found in the {@link #CalendarPickerView} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.cleanapps.timekeeper:headerTextColor
+        */
+        public static final int CalendarPickerView_headerTextColor = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.cleanapps.timekeeper.R.attr#titleTextColor}
+          attribute's value can be found in the {@link #CalendarPickerView} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.cleanapps.timekeeper:titleTextColor
+        */
+        public static final int CalendarPickerView_titleTextColor = 4;
         /** Attributes that can be used with a FloatLabelEditText.
            <p>Includes the following attributes:</p>
            <table>
@@ -901,9 +1352,9 @@ containing a value of this type.
            @see #FloatLabelEditText_textSize
          */
         public static final int[] FloatLabelEditText = {
-            0x7f010020, 0x7f010021, 0x7f010022, 0x7f010023,
-            0x7f010024, 0x7f010025, 0x7f010026, 0x7f010027,
-            0x7f010028, 0x7f010029, 0x7f01002a
+            0x7f01003a, 0x7f01003b, 0x7f01003c, 0x7f01003d,
+            0x7f01003e, 0x7f01003f, 0x7f010040, 0x7f010041,
+            0x7f010042, 0x7f010043, 0x7f010044
         };
         /**
           <p>This symbol is the offset where the {@link com.cleanapps.timekeeper.R.attr#fitScreenWidth}
@@ -1113,10 +1564,10 @@ containing a value of this type.
            @see #MapAttrs_zOrderOnTop
          */
         public static final int[] MapAttrs = {
-            0x7f010003, 0x7f010004, 0x7f010005, 0x7f010006,
-            0x7f010007, 0x7f010008, 0x7f010009, 0x7f01000a,
-            0x7f01000b, 0x7f01000c, 0x7f01000d, 0x7f01000e,
-            0x7f01000f, 0x7f010010
+            0x7f01000f, 0x7f010010, 0x7f010011, 0x7f010012,
+            0x7f010013, 0x7f010014, 0x7f010015, 0x7f010016,
+            0x7f010017, 0x7f010018, 0x7f010019, 0x7f01001a,
+            0x7f01001b, 0x7f01001c
         };
         /**
           <p>This symbol is the offset where the {@link com.cleanapps.timekeeper.R.attr#cameraBearing}
@@ -1351,9 +1802,9 @@ containing a value of this type.
            @see #PagerSlidingTabStrip_pstsUnderlineHeight
          */
         public static final int[] PagerSlidingTabStrip = {
-            0x7f010012, 0x7f010013, 0x7f010014, 0x7f010015,
-            0x7f010016, 0x7f010017, 0x7f010018, 0x7f010019,
-            0x7f01001a, 0x7f01001b, 0x7f01001c
+            0x7f01002c, 0x7f01002d, 0x7f01002e, 0x7f01002f,
+            0x7f010030, 0x7f010031, 0x7f010032, 0x7f010033,
+            0x7f010034, 0x7f010035, 0x7f010036
         };
         /**
           <p>This symbol is the offset where the {@link com.cleanapps.timekeeper.R.attr#pstsDividerColor}
@@ -1533,7 +1984,7 @@ containing a value of this type.
            @see #ParallaxImageView_tiltSensitivity
          */
         public static final int[] ParallaxImageView = {
-            0x7f01001d, 0x7f01001e, 0x7f01001f
+            0x7f010037, 0x7f010038, 0x7f010039
         };
         /**
           <p>This symbol is the offset where the {@link com.cleanapps.timekeeper.R.attr#forwardTiltOffset}
@@ -1577,22 +2028,304 @@ containing a value of this type.
           @attr name com.cleanapps.timekeeper:tiltSensitivity
         */
         public static final int ParallaxImageView_tiltSensitivity = 1;
-        /** Attributes that can be used with a ShimmerView.
+        /**  Attributes for the WalletFragment &lt;fragment&gt; tag 
            <p>Includes the following attributes:</p>
            <table>
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ShimmerView_reflectionColor com.cleanapps.timekeeper:reflectionColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentOptions_environment com.cleanapps.timekeeper:environment}</code></td><td> Google Wallet environment to use </td></tr>
+           <tr><td><code>{@link #WalletFragmentOptions_fragmentMode com.cleanapps.timekeeper:fragmentMode}</code></td><td> Fragment mode </td></tr>
+           <tr><td><code>{@link #WalletFragmentOptions_fragmentStyle com.cleanapps.timekeeper:fragmentStyle}</code></td><td> A style resource specifing attributes to customize the look and feel of WalletFragment </td></tr>
+           <tr><td><code>{@link #WalletFragmentOptions_theme com.cleanapps.timekeeper:theme}</code></td><td> Theme to be used for the Wallet selector </td></tr>
            </table>
-           @see #ShimmerView_reflectionColor
+           @see #WalletFragmentOptions_environment
+           @see #WalletFragmentOptions_fragmentMode
+           @see #WalletFragmentOptions_fragmentStyle
+           @see #WalletFragmentOptions_theme
          */
-        public static final int[] ShimmerView = {
-            0x7f010011
+        public static final int[] WalletFragmentOptions = {
+            0x7f01001d, 0x7f01001e, 0x7f01001f, 0x7f010020
         };
         /**
-          <p>This symbol is the offset where the {@link com.cleanapps.timekeeper.R.attr#reflectionColor}
-          attribute's value can be found in the {@link #ShimmerView} array.
+          <p>
+          @attr description
+           Google Wallet environment to use 
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>production</code></td><td>1</td><td></td></tr>
+<tr><td><code>sandbox</code></td><td>0</td><td></td></tr>
+<tr><td><code>strict_sandbox</code></td><td>2</td><td></td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name com.cleanapps.timekeeper:environment
+        */
+        public static final int WalletFragmentOptions_environment = 1;
+        /**
+          <p>
+          @attr description
+           Fragment mode 
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>buyButton</code></td><td>1</td><td></td></tr>
+<tr><td><code>selectionDetails</code></td><td>2</td><td></td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name com.cleanapps.timekeeper:fragmentMode
+        */
+        public static final int WalletFragmentOptions_fragmentMode = 3;
+        /**
+          <p>
+          @attr description
+           A style resource specifing attributes to customize the look and feel of WalletFragment 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.cleanapps.timekeeper:fragmentStyle
+        */
+        public static final int WalletFragmentOptions_fragmentStyle = 2;
+        /**
+          <p>
+          @attr description
+           Theme to be used for the Wallet selector 
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>holo_dark</code></td><td>0</td><td></td></tr>
+<tr><td><code>holo_light</code></td><td>1</td><td></td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name com.cleanapps.timekeeper:theme
+        */
+        public static final int WalletFragmentOptions_theme = 0;
+        /**  Attributes that may be specified in a style resource to customize the look and feel of
+         WalletFragment 
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_buyButtonAppearance com.cleanapps.timekeeper:buyButtonAppearance}</code></td><td> Appearance of the buy button.</td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_buyButtonHeight com.cleanapps.timekeeper:buyButtonHeight}</code></td><td> Height of the buy button.</td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_buyButtonText com.cleanapps.timekeeper:buyButtonText}</code></td><td> Text on the buy button.</td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_buyButtonWidth com.cleanapps.timekeeper:buyButtonWidth}</code></td><td> Width of the buy button.</td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsBackground com.cleanapps.timekeeper:maskedWalletDetailsBackground}</code></td><td> Masked wallet details background </td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsButtonBackground com.cleanapps.timekeeper:maskedWalletDetailsButtonBackground}</code></td><td> "Change" button background in masked wallet details view </td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsButtonTextAppearance com.cleanapps.timekeeper:maskedWalletDetailsButtonTextAppearance}</code></td><td> TextAppearance for the "Change" button in masked wallet details view </td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsHeaderTextAppearance com.cleanapps.timekeeper:maskedWalletDetailsHeaderTextAppearance}</code></td><td> TextAppearance for headers describing masked wallet details </td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsLogoImageType com.cleanapps.timekeeper:maskedWalletDetailsLogoImageType}</code></td><td> Type of the wallet logo image in masked wallet details view </td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsLogoTextColor com.cleanapps.timekeeper:maskedWalletDetailsLogoTextColor}</code></td><td> Color of the Google Wallet logo text in masked wallet details view </td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsTextAppearance com.cleanapps.timekeeper:maskedWalletDetailsTextAppearance}</code></td><td> TextAppearance for masked wallet details </td></tr>
+           </table>
+           @see #WalletFragmentStyle_buyButtonAppearance
+           @see #WalletFragmentStyle_buyButtonHeight
+           @see #WalletFragmentStyle_buyButtonText
+           @see #WalletFragmentStyle_buyButtonWidth
+           @see #WalletFragmentStyle_maskedWalletDetailsBackground
+           @see #WalletFragmentStyle_maskedWalletDetailsButtonBackground
+           @see #WalletFragmentStyle_maskedWalletDetailsButtonTextAppearance
+           @see #WalletFragmentStyle_maskedWalletDetailsHeaderTextAppearance
+           @see #WalletFragmentStyle_maskedWalletDetailsLogoImageType
+           @see #WalletFragmentStyle_maskedWalletDetailsLogoTextColor
+           @see #WalletFragmentStyle_maskedWalletDetailsTextAppearance
+         */
+        public static final int[] WalletFragmentStyle = {
+            0x7f010021, 0x7f010022, 0x7f010023, 0x7f010024,
+            0x7f010025, 0x7f010026, 0x7f010027, 0x7f010028,
+            0x7f010029, 0x7f01002a, 0x7f01002b
+        };
+        /**
+          <p>
+          @attr description
+           Appearance of the buy button. Must be one of "classic", "grayscale" and "monochrome" 
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>classic</code></td><td>1</td><td></td></tr>
+<tr><td><code>grayscale</code></td><td>2</td><td></td></tr>
+<tr><td><code>monochrome</code></td><td>3</td><td></td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name com.cleanapps.timekeeper:buyButtonAppearance
+        */
+        public static final int WalletFragmentStyle_buyButtonAppearance = 3;
+        /**
+          <p>
+          @attr description
+           Height of the buy button. This includes an 8dp padding (4dp on each side) used for
+             pressed and focused states of the button. The value can be a specific height, e.g.
+             "48dp", or special values "match_parent" and "wrap_content". 
+
+
+          <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+<p>May be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>match_parent</code></td><td>-1</td><td></td></tr>
+<tr><td><code>wrap_content</code></td><td>-2</td><td></td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name com.cleanapps.timekeeper:buyButtonHeight
+        */
+        public static final int WalletFragmentStyle_buyButtonHeight = 0;
+        /**
+          <p>
+          @attr description
+           Text on the buy button. Must be one of "buy_with_google", "buy_now" and "book_now" 
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>buy_with_google</code></td><td>1</td><td></td></tr>
+<tr><td><code>buy_now</code></td><td>2</td><td></td></tr>
+<tr><td><code>book_now</code></td><td>3</td><td></td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name com.cleanapps.timekeeper:buyButtonText
+        */
+        public static final int WalletFragmentStyle_buyButtonText = 2;
+        /**
+          <p>
+          @attr description
+           Width of the buy button. This includes an 8dp padding (4dp on each side) used for
+             pressed and focused states of the button. The value can be a specific width, e.g.
+             "300dp", or special values "match_parent" and "wrap_content". 
+
+
+          <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+<p>May be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>match_parent</code></td><td>-1</td><td></td></tr>
+<tr><td><code>wrap_content</code></td><td>-2</td><td></td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name com.cleanapps.timekeeper:buyButtonWidth
+        */
+        public static final int WalletFragmentStyle_buyButtonWidth = 1;
+        /**
+          <p>
+          @attr description
+           Masked wallet details background 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          <p>This is a private symbol.
+          @attr name com.cleanapps.timekeeper:maskedWalletDetailsBackground
+        */
+        public static final int WalletFragmentStyle_maskedWalletDetailsBackground = 6;
+        /**
+          <p>
+          @attr description
+           "Change" button background in masked wallet details view 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          <p>This is a private symbol.
+          @attr name com.cleanapps.timekeeper:maskedWalletDetailsButtonBackground
+        */
+        public static final int WalletFragmentStyle_maskedWalletDetailsButtonBackground = 8;
+        /**
+          <p>
+          @attr description
+           TextAppearance for the "Change" button in masked wallet details view 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.cleanapps.timekeeper:maskedWalletDetailsButtonTextAppearance
+        */
+        public static final int WalletFragmentStyle_maskedWalletDetailsButtonTextAppearance = 7;
+        /**
+          <p>
+          @attr description
+           TextAppearance for headers describing masked wallet details 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.cleanapps.timekeeper:maskedWalletDetailsHeaderTextAppearance
+        */
+        public static final int WalletFragmentStyle_maskedWalletDetailsHeaderTextAppearance = 5;
+        /**
+          <p>
+          @attr description
+           Type of the wallet logo image in masked wallet details view 
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>classic</code></td><td>1</td><td></td></tr>
+<tr><td><code>monochrome</code></td><td>2</td><td></td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name com.cleanapps.timekeeper:maskedWalletDetailsLogoImageType
+        */
+        public static final int WalletFragmentStyle_maskedWalletDetailsLogoImageType = 10;
+        /**
+          <p>
+          @attr description
+           Color of the Google Wallet logo text in masked wallet details view 
 
 
           <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
@@ -1602,8 +2335,145 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.cleanapps.timekeeper:reflectionColor
+          <p>This is a private symbol.
+          @attr name com.cleanapps.timekeeper:maskedWalletDetailsLogoTextColor
         */
-        public static final int ShimmerView_reflectionColor = 0;
+        public static final int WalletFragmentStyle_maskedWalletDetailsLogoTextColor = 9;
+        /**
+          <p>
+          @attr description
+           TextAppearance for masked wallet details 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.cleanapps.timekeeper:maskedWalletDetailsTextAppearance
+        */
+        public static final int WalletFragmentStyle_maskedWalletDetailsTextAppearance = 4;
+        /** Attributes that can be used with a calendar_cell.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #calendar_cell_state_current_month com.cleanapps.timekeeper:state_current_month}</code></td><td></td></tr>
+           <tr><td><code>{@link #calendar_cell_state_highlighted com.cleanapps.timekeeper:state_highlighted}</code></td><td></td></tr>
+           <tr><td><code>{@link #calendar_cell_state_range_first com.cleanapps.timekeeper:state_range_first}</code></td><td></td></tr>
+           <tr><td><code>{@link #calendar_cell_state_range_last com.cleanapps.timekeeper:state_range_last}</code></td><td></td></tr>
+           <tr><td><code>{@link #calendar_cell_state_range_middle com.cleanapps.timekeeper:state_range_middle}</code></td><td></td></tr>
+           <tr><td><code>{@link #calendar_cell_state_selectable com.cleanapps.timekeeper:state_selectable}</code></td><td></td></tr>
+           <tr><td><code>{@link #calendar_cell_state_today com.cleanapps.timekeeper:state_today}</code></td><td></td></tr>
+           </table>
+           @see #calendar_cell_state_current_month
+           @see #calendar_cell_state_highlighted
+           @see #calendar_cell_state_range_first
+           @see #calendar_cell_state_range_last
+           @see #calendar_cell_state_range_middle
+           @see #calendar_cell_state_selectable
+           @see #calendar_cell_state_today
+         */
+        public static final int[] calendar_cell = {
+            0x7f010005, 0x7f010006, 0x7f010007, 0x7f010008,
+            0x7f010009, 0x7f01000a, 0x7f01000b
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.cleanapps.timekeeper.R.attr#state_current_month}
+          attribute's value can be found in the {@link #calendar_cell} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.cleanapps.timekeeper:state_current_month
+        */
+        public static final int calendar_cell_state_current_month = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.cleanapps.timekeeper.R.attr#state_highlighted}
+          attribute's value can be found in the {@link #calendar_cell} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.cleanapps.timekeeper:state_highlighted
+        */
+        public static final int calendar_cell_state_highlighted = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.cleanapps.timekeeper.R.attr#state_range_first}
+          attribute's value can be found in the {@link #calendar_cell} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.cleanapps.timekeeper:state_range_first
+        */
+        public static final int calendar_cell_state_range_first = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.cleanapps.timekeeper.R.attr#state_range_last}
+          attribute's value can be found in the {@link #calendar_cell} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.cleanapps.timekeeper:state_range_last
+        */
+        public static final int calendar_cell_state_range_last = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.cleanapps.timekeeper.R.attr#state_range_middle}
+          attribute's value can be found in the {@link #calendar_cell} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.cleanapps.timekeeper:state_range_middle
+        */
+        public static final int calendar_cell_state_range_middle = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.cleanapps.timekeeper.R.attr#state_selectable}
+          attribute's value can be found in the {@link #calendar_cell} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.cleanapps.timekeeper:state_selectable
+        */
+        public static final int calendar_cell_state_selectable = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.cleanapps.timekeeper.R.attr#state_today}
+          attribute's value can be found in the {@link #calendar_cell} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.cleanapps.timekeeper:state_today
+        */
+        public static final int calendar_cell_state_today = 2;
     };
 }
